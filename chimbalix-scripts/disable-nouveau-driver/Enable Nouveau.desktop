@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+
+Name=Enable Nouveau
+Comment=
+Exec=sudo /opt/chimbalix-scripts/disable-nouveau-driver/enable-nouveau.sh pause
+Icon=dialog-warning
+Path=
+Terminal=true
+StartupNotify=false
+
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "Featherpad".
+# Translations:
