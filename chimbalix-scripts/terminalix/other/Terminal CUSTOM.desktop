@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Terminal CUSTOM
+Comment=Set default terminal script
+Exec=/opt/chimbalix-scripts/terminalix/terminalix.sh custom
+Icon=utilities-terminal_su
+Path=
+Terminal=true
+StartupNotify=false
