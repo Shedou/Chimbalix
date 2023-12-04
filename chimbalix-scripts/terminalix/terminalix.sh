@@ -90,6 +90,10 @@ if  [ -f "/bin/rxvt-unicode" ]; then echo "${B}rxvt-unicode${N} (/bin/rxvt-unico
 	if [ $first_term == $first_term_def ]; then first_term="rxvt-unicode"
 	fi
 fi
+if  [ -f "/bin/stterm" ]; then echo "${B}stterm${N} (/bin/stterm)"
+	if [ $first_term == $first_term_def ]; then first_term="stterm"
+	fi
+fi
 
 if [ "$mode" == "" ] || [ "$mode" == "--help" ]; then
 	echo -e "\nQuick usage help (examples):"
