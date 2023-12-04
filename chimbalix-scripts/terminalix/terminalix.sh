@@ -94,6 +94,10 @@ if  [ -f "/bin/stterm" ]; then echo "${B}stterm${N} (/bin/stterm)"
 	if [ $first_term == $first_term_def ]; then first_term="stterm"
 	fi
 fi
+if  [ -f "/bin/wezterm" ]; then echo "${B}wezterm${N} (/bin/wezterm)"
+	if [ $first_term == $first_term_def ]; then first_term="wezterm"
+	fi
+fi
 
 if [ "$mode" == "" ] || [ "$mode" == "--help" ]; then
 	echo -e "\nQuick usage help (examples):"
