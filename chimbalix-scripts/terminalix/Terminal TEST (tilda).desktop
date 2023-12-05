@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Terminal Test
+Comment=Open terminal
+Exec=terminal -c /opt/chimbalix-scripts/terminalix/terminalix.sh
+Icon=utilities-x-terminal
+Path=
+Terminal=false
+StartupNotify=false
