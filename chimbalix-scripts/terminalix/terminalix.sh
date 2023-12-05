@@ -1,6 +1,6 @@
 #!/bin/bash
 # WARNING! Works only with sudo / root privilegies!
-# Script version 1.0
+# Script version 1.1
 # LICENSE at the end of this file!
 #set -x #(for debug info)
 # terminal.sh setsilent path-to-terminal
@@ -13,7 +13,7 @@ mode="$1"
 terminal="$2"
 
 # Vars
-bin=/bin
+bin="/bin"
 term_path=""
 execute=0
 pause=1
@@ -32,73 +32,54 @@ echo "WARNING! Works only with sudo / root privilegies!"
 echo "-- -------- --"
 echo "Add/Change default system Terminal (command \"terminal\")."
 
-# Check terminals in system and quick help
-echo "Terminals are present in the system:"
-if [ -f "/bin/xfce4-terminal" ]; then echo "${B}xfce4-terminal${N} (/bin/xfce4-terminal)"
-	if [ $first_term == $first_term_def ]; then first_term="xfce4-terminal"
-	fi
-fi
-if  [ -f "/bin/gnome-terminal" ]; then echo "${B}gnome-terminal${N} (/bin/gnome-terminal)"
-	if [ $first_term == $first_term_def ]; then first_term="gnome-terminal"
-	fi
-fi
-if  [ -f "/bin/konsole" ]; then echo "${B}konsole${N} (/bin/konsole)"
-	if [ $first_term == $first_term_def ]; then first_term="konsole"
-	fi
-fi
-if  [ -f "/bin/uxterm" ]; then echo "${B}uxterm${N} (/bin/uxterm)"
-	if [ $first_term == $first_term_def ]; then first_term="uxterm"
-	fi
-fi
-if  [ -f "/bin/mlterm" ]; then echo "${B}mlterm${N} (/bin/mlterm)"
-	if [ $first_term == $first_term_def ]; then first_term="mlterm"
-	fi
-fi
-if  [ -f "/bin/txiterm" ]; then echo "${B}txiterm${N} (/bin/txiterm)"
-	if [ $first_term == $first_term_def ]; then first_term="txiterm"
-	fi
-fi
-if  [ -f "/bin/xterm" ]; then echo "${B}xterm${N} (/bin/xterm)"
-	if [ $first_term == $first_term_def ]; then first_term="xterm"
-	fi
-fi
-if  [ -f "/bin/alacritty" ]; then echo "${B}alacritty${N} (/bin/alacritty)"
-	if [ $first_term == $first_term_def ]; then first_term="alacritty"
-	fi
-fi
-if  [ -f "/bin/kitty" ]; then echo "${B}kitty${N} (/bin/kitty)"
-	if [ $first_term == $first_term_def ]; then first_term="kitty"
-	fi
-fi
-if  [ -f "/bin/guake" ]; then echo "${B}guake${N} (/bin/guake)"
-	if [ $first_term == $first_term_def ]; then first_term="guake"
-	fi
-fi
-if  [ -f "/bin/tilda" ]; then echo "${B}tilda${N} (/bin/tilda)"
-	if [ $first_term == $first_term_def ]; then first_term="tilda"
-	fi
-fi
-if  [ -f "/bin/tilix" ]; then echo "${B}tilix${N} (/bin/tilix)"
-	if [ $first_term == $first_term_def ]; then first_term="tilix"
-	fi
-fi
-if  [ -f "/bin/urxvt" ]; then echo "${B}urxvt${N} (/bin/urxvt)"
-	if [ $first_term == $first_term_def ]; then first_term="urxvt"
-	fi
-fi
-if  [ -f "/bin/rxvt-unicode" ]; then echo "${B}rxvt-unicode${N} (/bin/rxvt-unicode)"
-	if [ $first_term == $first_term_def ]; then first_term="rxvt-unicode"
-	fi
-fi
-if  [ -f "/bin/stterm" ]; then echo "${B}stterm${N} (/bin/stterm)"
-	if [ $first_term == $first_term_def ]; then first_term="stterm"
-	fi
-fi
-if  [ -f "/bin/wezterm" ]; then echo "${B}wezterm${N} (/bin/wezterm)"
-	if [ $first_term == $first_term_def ]; then first_term="wezterm"
+# Check binaries directory
+if  [ -d "$bin" ]; then
+	echo "Using default binary directory \"$bin\"."
+	echo "If this is the wrong location, correct the script (\"bin\" variable) according to your Linux distribution."
+else
+	echo $warn
+	echo "Binary directory \"$bin\" not found! Try to use \"/usr/bin\""
+	if  [ -d "/usr/bin" ]; then
+		bin="/usr/bin"
+		echo "Success. Using the \"$bin\" directory."
+	else
+		echo "Error! Please correct the script (\"bin\" variable) according to your Linux distribution."
+		echo "Press Enter to exit."
+		read rr
+		exit 0;
 	fi
 fi
 
+# Check terminals in system
+function check_terminal() {
+	ct_terminal_name="$1"
+	ct_full_path="$bin/$ct_terminal_name"
+	if  [ -f "$ct_full_path" ]; then
+		if [ $first_term == $first_term_def ]; then first_term="$ct_terminal_name"
+		fi
+		echo "${B}$ct_terminal_name${N} ($ct_full_path)"
+	fi
+}
+
+echo -e "\nTerminals are present in the system:"
+check_terminal "konsole"
+check_terminal "xfce4-terminal"
+check_terminal "gnome-terminal"
+check_terminal "wezterm"
+check_terminal "alacritty"
+check_terminal "xterm"
+check_terminal "stterm"
+check_terminal "kitty"
+check_terminal "txiterm"
+check_terminal "mlterm"
+check_terminal "uxterm"
+check_terminal "tilix"
+check_terminal "urxvt"
+check_terminal "rxvt-unicode"
+check_terminal "tilda"
+check_terminal "guake"
+
+# Quick help
 if [ "$mode" == "" ] || [ "$mode" == "--help" ]; then
 	echo -e "\nQuick usage help (examples):"
 	echo "./terminalix.sh set ${B}$first_term${N}"
