@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # WARNING! Works only with sudo / root privilegies!
 # Script version 1.1
 # LICENSE at the end of this file!
