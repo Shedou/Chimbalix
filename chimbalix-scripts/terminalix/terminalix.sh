@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # WARNING! Works only with sudo / root privilegies!
-# Script version 1.1
+# Script version 1.2
 # LICENSE at the end of this file!
 #set -x #(for debug info)
 # terminal.sh setsilent path-to-terminal
@@ -17,6 +17,7 @@ bin="/bin"
 term_path=""
 execute=0
 pause=1
+not_recommend=0
 first_term="terminal-Name"
 first_term_def="terminal-Name"
 
@@ -52,32 +53,44 @@ fi
 
 # Check terminals in system
 function check_terminal() {
-	ct_terminal_name="$1"
-	ct_full_path="$bin/$ct_terminal_name"
+	ct_term_name="$1"
+	ct_full_path="$bin/$ct_term_name"
+	# Print if file exists
 	if  [ -f "$ct_full_path" ]; then
-		if [ $first_term == $first_term_def ]; then first_term="$ct_terminal_name"
+		if [ $first_term == $first_term_def ]; then first_term="$ct_term_name"
 		fi
-		echo "${B}$ct_terminal_name${N} ($ct_full_path)"
+		# Check not recommended terminals
+		if [ $ct_term_name == "tilda" ] || [ $ct_term_name == "gnome-terminal" ] || [ $ct_term_name == "lxterm" ]; then 
+			echo "*Not recommended*: ${B}$ct_term_name${N} ($ct_full_path)"
+			not_recommend=1
+		else
+			echo "${B}$ct_term_name${N} ($ct_full_path)"
+		fi
 	fi
 }
 
 echo -e "\nTerminals are present in the system:"
-check_terminal "konsole"
-check_terminal "xfce4-terminal"
-check_terminal "gnome-terminal"
-check_terminal "wezterm"
 check_terminal "alacritty"
-check_terminal "xterm"
-check_terminal "stterm"
-check_terminal "kitty"
-check_terminal "txiterm"
-check_terminal "mlterm"
-check_terminal "uxterm"
-check_terminal "tilix"
-check_terminal "urxvt"
-check_terminal "rxvt-unicode"
-check_terminal "tilda"
 check_terminal "guake"
+check_terminal "kitty"
+check_terminal "konsole"
+check_terminal "mlterm"
+check_terminal "rxvt-unicode"
+check_terminal "stterm"
+check_terminal "tilix"
+check_terminal "txiterm"
+check_terminal "urxvt"
+check_terminal "uxterm"
+check_terminal "wezterm"
+check_terminal "xfce4-terminal"
+check_terminal "xterm"
+
+check_terminal "gnome-terminal"
+check_terminal "lxterm"
+check_terminal "tilda"
+if [ $not_recommend == 1 ]; then
+echo -e "\n* - The standard launch argument \"-e\" may not work. Use this terminal at your own risk."
+fi
 
 # Quick help
 if [ "$mode" == "" ] || [ "$mode" == "--help" ]; then
