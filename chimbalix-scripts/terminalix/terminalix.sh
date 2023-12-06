@@ -27,11 +27,12 @@ N=$(tput sgr0)
 
 warn="${B}-=== WARNING! ===-${N}"
 
-echo "-= ======== =-"
-echo "Script for Chimbalix 23.1"
-echo "WARNING! Works only with sudo / root privilegies!"
-echo "-- -------- --"
-echo "Add/Change default system Terminal (command \"terminal\")."
+echo "-= ================================================= =-"
+echo "-=             Script for Chimbalix 23.1             =-"
+echo "-= WARNING! Works only with sudo / root privilegies! =-"
+echo "-- ------------------------------------------------- --"
+echo "Change the system's default Terminal Emulator (command \"terminal\")."
+echo "Only for desktop Linux distributions with a desktop environment."
 
 # Check binaries directory
 if  [ -d "$bin" ]; then
@@ -108,7 +109,7 @@ if [ "$mode" == "" ] || [ "$mode" == "--help" ]; then
 	echo " - For other scripts. Don't wait after success or error."
 fi
 
-echo -e "-= ======== =-\n"
+echo -e "-= =================== =-\n"
 
 # -= ======================================================== =-
 # -= ======================================================== =-
