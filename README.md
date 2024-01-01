@@ -11,7 +11,9 @@ Chimbalix 23.1 "Alphachi" ( github.com/Shedou/Chimbalix ) is based on MX Linux 2
 
 ## Downloads
 
-### Google Drive: https://drive.google.com/drive/folders/1vJwvMnvEqnk92MZ_dmQpAaB9BEUCt03L
+### Google Drive (ISO, 3.7 GiB): https://drive.google.com/drive/folders/1vJwvMnvEqnk92MZ_dmQpAaB9BEUCt03L
+
+### GitHub (7-Zip, 2 parts): [Chimbalix 23.1 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_v1) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_v1/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_v1)
 
 ## Visuals
 
