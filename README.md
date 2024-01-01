@@ -1,6 +1,3 @@
-# Chimbalix repository
-Things for Linux distribution
-
 # Chimbalix 23.1 Alphachi
 
 ## WARNING!
