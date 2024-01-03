@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Terminal SET - konsole
+Name=Terminal SET - xfce4-terminal
 Comment=Set default terminal script
-Exec=/opt/chimbalix-scripts/terminalix/terminalix.sh set konsole
+Exec=/portsoft/script/chimbalix-scripts/terminalix/terminalix.sh set xfce4-terminal
 Icon=aspia_console
 Path=
 Terminal=true

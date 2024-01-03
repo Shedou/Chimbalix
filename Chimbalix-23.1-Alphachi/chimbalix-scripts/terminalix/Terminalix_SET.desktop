@@ -1,0 +1,30 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Script - Terminalix (Set)
+Comment=Set default terminal script
+GenericName=
+
+Icon=utilities-terminal_su
+Exec=/portsoft/script/chimbalix-scripts/terminalix/terminalix.sh set
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-scripts;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Скрипт - Terminalix (Задать)

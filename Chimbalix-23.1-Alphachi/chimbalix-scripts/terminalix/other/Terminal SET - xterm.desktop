@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Terminal SET
+Name=Terminal SET - xterm
 Comment=Set default terminal script
-Exec=/opt/chimbalix-scripts/terminalix/terminalix.sh set
-Icon=utilities-terminal_su
+Exec=/portsoft/script/chimbalix-scripts/terminalix/terminalix.sh set xterm
+Icon=aspia_console
 Path=
 Terminal=true
 StartupNotify=false

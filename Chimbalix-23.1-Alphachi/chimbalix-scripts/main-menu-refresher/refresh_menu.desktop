@@ -1,0 +1,31 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Script - Main Menu Refresher
+Comment=Force the main menu to refresh without rebooting or logging out.
+GenericName=Main Menu Refresher
+
+Icon=dialog-warning
+Exec=EXEC_PATH
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=true
+StartupNotify=false
+
+Categories=chi-scripts;
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+Name[ru]=Скрипт - Main Menu Refresher
+Comment[ru]=Принудительно обновить главное меню без перезагрузки или выхода из системы.

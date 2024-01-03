@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Terminal SET - gnome-terminal
+Name=Terminal SET - konsole
 Comment=Set default terminal script
-Exec=/opt/chimbalix-scripts/terminalix/terminalix.sh set gnome-terminal
+Exec=/portsoft/scripts/chimbalix-scripts/terminalix/terminalix.sh set konsole
 Icon=aspia_console
 Path=
 Terminal=true

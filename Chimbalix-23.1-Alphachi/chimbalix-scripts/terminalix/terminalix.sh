@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # WARNING! Works only with sudo / root privilegies!
-# Script version 1.2
+# Script version 1.1
 # LICENSE at the end of this file!
 #set -x #(for debug info)
 # terminal.sh setsilent path-to-terminal
@@ -17,7 +17,6 @@ bin="/bin"
 term_path=""
 execute=0
 pause=1
-not_recommend=0
 first_term="terminal-Name"
 first_term_def="terminal-Name"
 
@@ -27,12 +26,11 @@ N=$(tput sgr0)
 
 warn="${B}-=== WARNING! ===-${N}"
 
-echo "-= ================================================= =-"
-echo "-=             Script for Chimbalix 23.1             =-"
-echo "-= WARNING! Works only with sudo / root privilegies! =-"
-echo "-- ------------------------------------------------- --"
-echo "Change the system's default Terminal Emulator (command \"terminal\")."
-echo "Only for desktop Linux distributions with a desktop environment."
+echo "-= ======== =-"
+echo "Script for Chimbalix 23.1"
+echo "WARNING! Works only with sudo / root privilegies!"
+echo "-- -------- --"
+echo "Add/Change default system Terminal (command \"terminal\")."
 
 # Check binaries directory
 if  [ -d "$bin" ]; then
@@ -54,44 +52,32 @@ fi
 
 # Check terminals in system
 function check_terminal() {
-	ct_term_name="$1"
-	ct_full_path="$bin/$ct_term_name"
-	# Print if file exists
+	ct_terminal_name="$1"
+	ct_full_path="$bin/$ct_terminal_name"
 	if  [ -f "$ct_full_path" ]; then
-		if [ $first_term == $first_term_def ]; then first_term="$ct_term_name"
+		if [ $first_term == $first_term_def ]; then first_term="$ct_terminal_name"
 		fi
-		# Check not recommended terminals
-		if [ $ct_term_name == "tilda" ] || [ $ct_term_name == "gnome-terminal" ] || [ $ct_term_name == "lxterm" ]; then 
-			echo "*Not recommended*: ${B}$ct_term_name${N} ($ct_full_path)"
-			not_recommend=1
-		else
-			echo "${B}$ct_term_name${N} ($ct_full_path)"
-		fi
+		echo "${B}$ct_terminal_name${N} ($ct_full_path)"
 	fi
 }
 
 echo -e "\nTerminals are present in the system:"
-check_terminal "alacritty"
-check_terminal "guake"
-check_terminal "kitty"
 check_terminal "konsole"
-check_terminal "mlterm"
-check_terminal "rxvt-unicode"
-check_terminal "stterm"
-check_terminal "tilix"
-check_terminal "txiterm"
-check_terminal "urxvt"
-check_terminal "uxterm"
-check_terminal "wezterm"
 check_terminal "xfce4-terminal"
-check_terminal "xterm"
-
 check_terminal "gnome-terminal"
-check_terminal "lxterm"
+check_terminal "wezterm"
+check_terminal "alacritty"
+check_terminal "xterm"
+check_terminal "stterm"
+check_terminal "kitty"
+check_terminal "txiterm"
+check_terminal "mlterm"
+check_terminal "uxterm"
+check_terminal "tilix"
+check_terminal "urxvt"
+check_terminal "rxvt-unicode"
 check_terminal "tilda"
-if [ $not_recommend == 1 ]; then
-echo -e "\n* - The standard launch argument \"-e\" may not work. Use this terminal at your own risk."
-fi
+check_terminal "guake"
 
 # Quick help
 if [ "$mode" == "" ] || [ "$mode" == "--help" ]; then
@@ -109,7 +95,7 @@ if [ "$mode" == "" ] || [ "$mode" == "--help" ]; then
 	echo " - For other scripts. Don't wait after success or error."
 fi
 
-echo -e "-= =================== =-\n"
+echo -e "-= ======== =-\n"
 
 # -= ======================================================== =-
 # -= ======================================================== =-

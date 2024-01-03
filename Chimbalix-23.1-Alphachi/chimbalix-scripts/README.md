@@ -1,5 +1,5 @@
 # chimbalix-scripts
 scripts for Chimbalix
 
-Install directory: /opt
+Install directory: /portsoft/script
 

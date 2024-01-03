@@ -3,7 +3,7 @@
 # LICENSE at the end of this file!
 #set -x #(for debug info)
 
-path_to_script=/opt/chimbalix-scripts/disable-nouveau-driver
+path_to_script="$( dirname "$(readlink -f "$0")")"
 path_to_output_dir=/etc/modprobe.d
 
 input=$path_to_script/data/chi-blacklist-nouveau.conf
@@ -27,24 +27,21 @@ if [ "$yn" == "yes" ] || [ "$yn" == "y" ]; then
 	# Remove old file if exist
 	if [ -f $output ]; then
 		echo -e "Remove old file: $output\n"
-		rm $output
+		sudo rm $output
 	fi
 	
 	# Copy prepared file
 	echo -e "Copy:\n" $input "\nTo:\n" $output "\n"
-	cp -T $input $output
+	sudo cp -T $input $output
 	
 	# Updating initramfs
 	echo "Updating initramfs (update-initramfs -u)"
 	echo -e "After complete reboot system to apply changes.\nPlease wait...\n"
-	update-initramfs -u
+	sudo update-initramfs -u
 	
-	# Reboot if user confirm
-	echo -e "\nDo you want to reboot system? Enter ${B}yes${N} or ${B}y${N} to reboot:"
+	# Reboot
+	echo -e "\nPlease, reboot the system!"
 	read rebuut
-	if [ "$rebuut" == "yes" ] || [ "$rebuut" == "y" ]; then
-		reboot
-	fi
 else
 	echo -e "Abort.\n"
 fi
