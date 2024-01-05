@@ -1,4 +1,8 @@
 # Chimbalix 23.1 Alphachi
+* Kernel: 6.5.0-1mx-ahs-amd64
+* Debian Version: 12.2 (bookworm)
+* DE: Xfce 4.18.1
+* GTK: 3.24.38
 
 ## WARNING!
 
