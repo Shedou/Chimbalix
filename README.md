@@ -10,6 +10,8 @@ This is the "Alpha" version of the Linux distribution, it contains a lot of unfi
 
 Chimbalix 23.1 "Alphachi" ( github.com/Shedou/Chimbalix ) is based on MX Linux 23.1 x64 AHS "Libretto" ( mxlinux.org )
 
+ATTENTION! Installing updates via *sudo apt upgrade / sudo apt-get upgrade* or through the update center is highly not recommended!
+
 ## Downloads
 
 ### Google Drive (64-bit, ISO, 3.7 GiB): https://drive.google.com/drive/folders/1vJwvMnvEqnk92MZ_dmQpAaB9BEUCt03L
