@@ -1,0 +1,44 @@
+[Desktop Entry]
+# -= APPLICATION =- #
+Type=Application
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Change Me!
+Comment=
+GenericName=
+
+Icon=
+Exec=
+TryExec=
+Path=
+#StartupWMClass=
+
+Terminal=false
+StartupNotify=false
+
+Categories=
+#Keywords=
+#MimeType=
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+#Name[ru]=
+#GenericName[ru]=
+#Comment[ru]=
+
+# - ------------- - #
+# - Actions Begin - #
+
+#Actions=Act;
+
+#[Desktop Action Act]
+#Name=Acttion Template
+#Exec=thunar
+
+# -  Actions End  - #
+# - ------------- - #

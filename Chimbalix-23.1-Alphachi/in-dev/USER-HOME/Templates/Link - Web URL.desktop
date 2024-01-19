@@ -1,0 +1,22 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Link
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=Change Me!
+Comment=
+GenericName=
+
+Icon=
+URL=Change Me!
+
+# - Translations:
+# FOR TRANSLATORS! Please! Do not translate the app NAME, such as "FeatherPad".
+#Name[ru]=
+#Comment[ru]=
+#GenericName[ru]=
