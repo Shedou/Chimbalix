@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="image/webp">
+		<comment>WebP image</comment>
+		<comment xml:lang="ru">Изображение WebP</comment>
+		<generic-icon name="image-x-generic"/>
+		<magic>
+			<match type="string" value="RIFF" offset="0">
+			<match type="string" value="WEBP" offset="8"/>
+			</match>
+		</magic>
+		<glob pattern="*.webp"/>
+	</mime-type>
+    <mime-type type="application/x-ms-dos-executable">
+		<comment>DOS/Windows executable</comment>
+		<comment xml:lang="ru">Исполняемый файл DOS/Windows</comment>
+		<generic-icon name="application-x-executable"/>
+		<magic>
+    		<match type="string" value="MZ" offset="0"/>
+		</magic>
+		<glob pattern="*.exe"/>
+	</mime-type>
+	<mime-type type="application/x-ms-dos-dll">
+		<comment>DOS/Windows library</comment>
+		<comment xml:lang="ru">Библиотека DOS/Windows</comment>
+		<generic-icon name="application-x-sharedlib"/>
+		<magic>
+    		<match type="string" value="MZ" offset="0"/>
+		</magic>
+		<glob pattern="*.dll"/>
+	</mime-type>
+</mime-info>
