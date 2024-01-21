@@ -13,7 +13,7 @@ Codec="$1"; shift; # arg 1
 QualityVideo="$1"; shift; # arg 2
 Preset="$1"; shift; # arg 3
 QualityAudio="$1"; shift; # arg 4
-Files="$@"
+Files=("$@")
 
 #
 ffmpeg_exec=ffmpeg
@@ -53,20 +53,23 @@ if [ "$Codec" == "libx265" ]; then
 	echo "Audio Quality: $libvorbis_q"
 	echo -e "Try to execute ffmpeg. \n"
 	
-	for i in $Files; do
-		OutputFileName="${i%.*}"
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		OutputFileName="${CurrentFile%.*}"
 		if [ ! -f "$OutputFileName.mkv" ]; then
 			Out="$OutputFileName.bad.mkv"
 		else
 			Out="$OutputFileName-x265.bad.mkv"
 		fi
 		
-		if $ffmpeg_exec -i "$i" -vcodec libx265 $libx265_preset $libx265_crf -acodec libvorbis $libvorbis_q "$Out"; then
+		if $ffmpeg_exec -i "$CurrentFile" -vcodec libx265 $libx265_preset $libx265_crf -acodec libvorbis $libvorbis_q "$Out"; then
 			echo "Finished. Renaming file to normal."
 			if [ ! -f "$OutputFileName.mkv" ]; then
+				echo "if"
 				mv "$Out" "$OutputFileName.mkv"
 				GoodFiles="${GoodFiles}\n $OutputFileName.mkv"
 			else
+				echo "else"
 				mv "$Out" "$OutputFileName-x265.mkv"
 				GoodFiles="${GoodFiles}\n $OutputFileName-x265.mkv"
 			fi
@@ -79,7 +82,7 @@ if [ "$Codec" == "libx265" ]; then
 	done
 fi
 
-# HEVC / x265
+# MPEG4
 if [ "$Codec" == "mpeg4" ]; then
 	libmpeg4_q="-crf 28"
 	libmpeg4_preset="-preset faster"
