@@ -110,9 +110,25 @@
 	<other-files/>
 </action>
 <action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.png</icon>
+	<name>Check MIME-type</name>
+	<submenu>Tools</submenu>
+	<unique-id>1705560390347026-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.sh %F&quot;</command>
+	<description>Check the MIME type of the selected file/files</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
 	<icon>ark</icon>
 	<name>Ark - Open as Archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1703583758359340-7</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark open %d %f</command>
 	<description>Open file as archive</description>
@@ -127,7 +143,7 @@
 <action>
 	<icon>archive</icon>
 	<name>Ark - Create archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1700763124184257-1</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark add %d %F</command>
 	<description>Add files to archive</description>
@@ -143,7 +159,7 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Ark - Extract here</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1700763223517142-2</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark extract_here %d %F</command>
 	<description>Extract files here</description>
@@ -158,7 +174,7 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Ark - Extract to...</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1703529849956097-1</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark extract_to %d %F</command>
 	<description>Extract files to custom directory</description>
@@ -173,7 +189,7 @@
 <action>
 	<icon>org.gnome.FileRoller.Devel</icon>
 	<name>File Roller - Open as Archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703584102943246-9</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller open %d %f</command>
 	<description>Open file as archive</description>
@@ -188,7 +204,7 @@
 <action>
 	<icon>archive</icon>
 	<name>File Roller - Create archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703531833894706-1</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller add %d %F</command>
 	<description>Add files to archive</description>
@@ -204,7 +220,7 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>File Roller - Extract here</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703531987741751-2</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller extract_here %d %F</command>
 	<description>Extract files here</description>
@@ -219,7 +235,7 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>File Roller - Extract to...</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703531991310998-3</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller extract_to %d %F</command>
 	<description>Extract files to custom directory</description>
@@ -234,7 +250,7 @@
 <action>
 	<icon>ark</icon>
 	<name>Engrampa - Open as Archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703584294944238-10</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa open %d %f</command>
 	<description>Open file as archive</description>
@@ -249,7 +265,7 @@
 <action>
 	<icon>archive</icon>
 	<name>Engrampa - Create archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703582908448169-4</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa add %d %F</command>
 	<description>Add files to archive</description>
@@ -265,7 +281,7 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Engrampa - Extract here</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703582912311839-5</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa extract_here %d %F</command>
 	<description>Extract files here</description>
@@ -280,7 +296,7 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Engrampa - Extract to...</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703582915316762-6</unique-id>
 	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa extract_to %d %F</command>
 	<description>Extract files to custom directory</description>
@@ -326,27 +342,11 @@
 	<video-files/>
 </action>
 <action>
-	<icon>/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.png</icon>
-	<name>Check MIME-type</name>
-	<submenu>Tools</submenu>
-	<unique-id>1705560390347026-1</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.sh %F&quot;</command>
-	<description>Check the MIME type of the selected file/files</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
 	<icon></icon>
-	<name>Convert to PNG (c9 - slower/smaller)</name>
-	<submenu>Image Convert</submenu>
-	<unique-id>1705856004044073-8</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 90 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<name>Resize (Up to 1920x1080)</name>
+	<submenu>Image Convert/Resize</submenu>
+	<unique-id>1705937768194085-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 98 -nofilter 1920x1080 -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -354,30 +354,8 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Convert to PNG (c6 - default)</name>
-	<submenu>Image Convert</submenu>
-	<unique-id>1705855112929797-7</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 60 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon></icon>
-	<name>Convert to PNG (c2 - faster/bigger)</name>
-	<submenu>Image Convert</submenu>
-	<unique-id>1705856814980790-9</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 20 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon></icon>
-	<name>Convert to JPEG (Q98, 1600x1200)</name>
-	<submenu>Image Convert</submenu>
+	<name>Resize (Up to 1600x1200)</name>
+	<submenu>Image Convert/Resize</submenu>
 	<unique-id>1705854641369050-5</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 98 -nofilter 1600x1200 -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -387,8 +365,8 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Convert to JPEG (Q100)</name>
-	<submenu>Image Convert</submenu>
+	<name>JPEG (Quality 100)</name>
+	<submenu>Image Convert/JPEG</submenu>
 	<unique-id>1705840124484043-1</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 100 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -398,8 +376,8 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Convert to JPEG (Q85)</name>
-	<submenu>Image Convert</submenu>
+	<name>JPEG (Quality 85)</name>
+	<submenu>Image Convert/JPEG</submenu>
 	<unique-id>1705854818666342-6</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 85 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -409,8 +387,8 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Convert to JPEG (Q75)</name>
-	<submenu>Image Convert</submenu>
+	<name>JPEG (Quality 75)</name>
+	<submenu>Image Convert/JPEG</submenu>
 	<unique-id>1705850796835492-2</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 75 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -420,8 +398,8 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Convert to JPEG (Q50)</name>
-	<submenu>Image Convert</submenu>
+	<name>JPEG (Quality 50)</name>
+	<submenu>Image Convert/JPEG</submenu>
 	<unique-id>1705850869119196-3</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 50 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -431,13 +409,68 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Convert to JPEG (Q25)</name>
-	<submenu>Image Convert</submenu>
+	<name>JPEG (Quality 25)</name>
+	<submenu>Image Convert/JPEG</submenu>
 	<unique-id>1705851229808185-4</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 25 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
 	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (c9 - Slower / Smaller)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1705856004044073-8</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 90 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (c6 - Default)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1705855112929797-7</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 60 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (c2 - Faster / Bigger)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1705856814980790-9</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 20 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Run with &quot;LC_ALL=ru_RU.UTF-8&quot;</name>
+	<submenu>Wine</submenu>
+	<unique-id>1706022113138794-1</unique-id>
+	<command>terminal -e &quot;env LC_ALL=ru_RU.UTF-8 wine %f&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.exe</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Run with fps limit (DXVK_FRAME_RATE=120)</name>
+	<submenu>Wine</submenu>
+	<unique-id>1706022484060464-2</unique-id>
+	<command>terminal -e &quot;env LC_ALL=ru_RU.UTF-8 DXVK_FRAME_RATE=120 wine %f&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.exe</patterns>
+	<other-files/>
 </action>
 </actions>
