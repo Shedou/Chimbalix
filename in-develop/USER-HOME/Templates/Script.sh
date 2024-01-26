@@ -22,5 +22,5 @@
 
 # Font styles
 # Usage: "${B}Bold Text${N}"
-B=$(tput bold)
-N=$(tput sgr0)
+# B=$(tput bold)
+# N=$(tput sgr0)

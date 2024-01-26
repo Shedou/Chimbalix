@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="image/webp">
+		<comment>WebP image</comment>
+		<comment xml:lang="ru">Изображение WebP</comment>
+		<generic-icon name="image-x-generic"/>
+		<magic>
+			<match type="string" value="RIFF" offset="0"/>
+			<match type="string" value="WEBP" offset="8"/>
+		</magic>
+		<glob pattern="*.webp"/>
+	</mime-type>
+</mime-info>
