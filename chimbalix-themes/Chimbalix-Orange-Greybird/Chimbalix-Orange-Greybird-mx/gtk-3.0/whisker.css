@@ -1,0 +1,50 @@
+
+/*set custom gtk3/css code below */
+/* Background is perimeter border*/
+/* color is cursor, corner triangle, and user name*/
+#whiskermenu-window {
+	background-color: #2F343F;
+	color: #ccc;
+}
+
+/* Colour of thin border around whisker menu */
+#whiskermenu-window border { 
+border-color: #2F343F; 
+}
+
+/* Make sidebar buttons match */
+/* Background is area behind category icons and tool bars*/
+/* color is category text*/
+#whiskermenu-window button {
+	background-color: #2F343F;
+	color: #ccc;
+}
+/* Background a transitional color when changing categories*/
+/* color is text transitional color when changing categories*/
+#whiskermenu-window button:hover {
+	background-color: #8B8B8B;
+	color: #ccc;
+}
+/* Background is behind while button is being activiated*/
+/* color is color of text while selected*/
+#whiskermenu-window button:checked {
+	background-color: #8B8B8B;
+	color: #fff;
+}
+/* Background is area where applications appear */
+/* color is the application text*/
+/* Make treeview match */
+
+#whiskermenu-window treeview {
+	/*background-color: #CECECE;*/
+	color:  #232123;
+}
+
+/* Background is selection box color in tree view*/
+/* color is the selected application text*/
+
+#whiskermenu-window treeview:hover {
+	background-color: #4E9EF3;
+	color: #232123;
+}
+

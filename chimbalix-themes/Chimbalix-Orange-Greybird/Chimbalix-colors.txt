@@ -1,0 +1,9 @@
+orange-active:			#e8b460 - 232, 180, 96
+orange-active-dark:		#b48943 - 180, 137, 67
+orange-inactive:		#b48943 - 180, 137, 67
+orange-inactive-dark:	#88662d - 136, 102, 45
+
+dark-active:			#6e5833
+dark-active-darker:		#353325
+dark-inactive:			#353325
+dark-inactive-darker:	#201305

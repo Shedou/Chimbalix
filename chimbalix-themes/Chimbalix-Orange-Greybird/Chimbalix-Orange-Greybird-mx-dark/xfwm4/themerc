@@ -1,0 +1,84 @@
+# 
+# Chimbalix-orange-med-thick Theme for Xfce (dark).
+# Created by Chimbal ( https://github.com/Shedou )
+# MIT License
+
+# Frame border top - https://wiki.xfce.org/howto/xfwm4_theme (2023-12-07):
+# "XFWM Versions 4.14.1 and above can take advantage of this feature to
+# crop the top frame border of maximized application windows."
+
+frame_border_top=0
+
+# button_layout :
+#	O = Option menu
+#	T = Stick
+#	H = hide
+#	S = shade
+#	M = maximize
+#	C = close
+#	| = title
+
+# -= =============== =- #
+# -= Button Settings =- #
+# -= =============== =- #
+
+button_layout=OTS|HMC
+
+button_offset=2
+maximized_offset=2
+button_spacing=2
+
+# -= ======== =- #
+# -= Settings =- #
+# -= ======== =- #
+
+#shadow_delta_height=0
+#shadow_delta_width=0
+#shadow_delta_x=0
+#shadow_delta_y=0
+#shadow_opacity=50
+
+show_app_icon=false
+
+title_full_width=true
+
+title_shadow_active=false
+title_shadow_inactive=false
+
+title_horizontal_offset=0
+title_vertical_offset_active=0
+title_vertical_offset_inactive=0
+
+# -= ====== =- #
+# -= COLORS =- #
+# -= ====== =- #
+
+active_text_color=#ffffff
+inactive_text_color=#dadada
+
+## COLORS Quick Help
+## https://wiki.xfce.org/howto/xfwm4_theme
+# Name							Gtk value				Description
+# ----							---------				-----------
+# active_text_color				fg[selected]			Text color on title for active window
+# inactive_text_color			fg[insensitive]	 		Text color on title for inactive window
+# active_text_shadow_color		dark[selected]			Shadow color for active window's title
+# inactive_text_shadow_color	dark[insensitive]		Shadow color for inactive window's title
+# active_border_color			fg[normal]				Very rarely used usually set to black
+# inactive_border_color			fg[normal]				Idem
+# active_color_1				bg[selected]			Background color for active title
+# active_color_2				bg[normal]				Background color for active window
+# active_hilight_1				light[selected]			Lighter color for active title for 3D look
+# active_hilight_2				light[normal]			Lighter color for active window
+# active_mid_1					mid[selected]			Slightly darker color for active title
+# active_mid_2					mid[normal]				Slightly darker color for active window
+# active_shadow_1				darkselected[]			Darker color for active title for 3D look
+# active_shadow_2				dark[normal]			Darker color for active window
+# inactive_color_1				bg[insensitive]			Background color for inactive title
+# inactive_color_2				bg[normal]				Background color for inactive window
+# inactive_hilight_1			light[insensitive]		Lighter color for inactive title for 3D look
+# inactive_hilight_2			light[normal]			Lighter color for inactive window
+# inactive_mid_1				mid[insensitive]		Slightly darker color for inactive title
+# inactive_mid_2				mid[normal]				Slightly darker color for inactive window
+# inactive_shadow_1				dark[insensitive]		Darker color for inactive title for 3D look
+# inactive_shadow_2				dark[normal]			Darker color for inactive window

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Chimbalix-Orange-Greybird-mx-dark
+Comment=Orange-Greybird-mx dark theme for chimbalix
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Chimbalix-Orange-Greybird-mx-dark
+IconTheme=Papirus-Dark
+CursorTheme=DMZ-Black
+ButtonLayout=:minimize,maximize,close

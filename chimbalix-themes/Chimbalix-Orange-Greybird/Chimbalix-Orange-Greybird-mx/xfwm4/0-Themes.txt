@@ -1,0 +1,35 @@
+# Chimbalix-orange Themes for Xfce.
+# Created by Chimbal ( https://github.com/Shedou )
+# MIT License
+
+-== ================================= ==-
+-== Quick Help - where are the themes ==-
+-== ================================= ==-
+-== Actual Xfwm version 4.2 and newer ==-
+-== ================================= ==-
+
+- User Home directory:
+Full path:      “/home/USER_NAME/.themes/THEME_NAME/xfwm4”
+Short way to write the path:  “~/.themes/THEME_NAME/xfwm4”
+
+- System shared data directory:
+“/usr/share/themes/THEME_NAME/xfwm4”
+
+- Other system shared data directory:
+“/usr/local/share/themes/THEME_NAME/xfwm4”
+
+-== ===================== ==-
+-== Old Xfwm4 version 4.0 ==-
+-== ===================== ==-
+
+- User home dir:
+"/home/USER_NAME/.themes/xfwm4/THEME_NAME"
+
+- System shared data directory:
+"/usr/share/xfwm4/themes/THEME_NAME"
+
+-== ========= ==-
+-== Xfce Wiki ==-
+-== ========= ==-
+
+https://wiki.xfce.org/howto/xfwm4_theme
