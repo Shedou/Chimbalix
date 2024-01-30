@@ -8,63 +8,25 @@ B=$(tput bold)
 N=$(tput sgr0)
 
 Format="$1"; shift; # arg 1
-Quality="$1"; shift; # arg 2
-Filter="$1"; shift; # arg 4
-Resize="$1"; shift; # arg 3
-Rotate="$1"; shift; # arg 5
-Flip="$1"; shift; # arg 6
-Flop="$1"; shift; # arg 7
+Compression="$1"; shift; # arg 2
+Type="$1"; shift; # arg 3
 
 OutQuality=""
+OutType=""
+OutAlpha=""
 TQ="Def"
+TT=""
 
-OutFilter=""
-TFilter=""
-
-OutSize=""
-TSize=""
-
-OutRotate=""
-TRotate=""
-
-OutFlip=""
-TFlip=""
-
-OutFlop=""
-TFlop=""
-if [ "$Quality" != "-noquality" ]; then OutQuality="-quality $Quality"
+if [ "$Quality" != "-noquality" ]; then OutQuality="-quality $Compression"
 	TQ="$Quality"
 fi
 
-if [ "$Resize" != "-noresize" ]; then OutSize="-resize $Resize"
-	TSize="-$Resize"
-	TQ=""
-fi
-
-if [ "$Filter" != "-nofilter" ]; then OutFilter="-filter $Filter"
-	TFilter="-$Filter"
-fi
-
-if [ "$Rotate" != "-norotate" ]; then
-	OutRotate="-rotate $Rotate"
-	if [[ "$Rotate" == -* ]]; then
-		temp="${Rotate:1}"
-		TRotate="-L$temp"
-	else
-		TRotate="-R$Rotate"
+if [ "$Type" != "default" ]; then OutType="-type $Type"
+	TT="$Type"
+	if [ "$Type" == "TrueColor" ] || [ "$Type" == "GrayScale" ] || [ "$Type" == "Palette" ] || [ "$Type" == "BiLevel" ]; then
+		OutAlpha="-alpha remove"
 	fi
 fi
-
-if [ "$Flip" != "-noflip" ]; then OutFlip="-flip"
-	TFlip="-flip"
-fi
-
-if [ "$Flop" != "-noflop" ]; then OutFlop="-flop"
-	TFlop="-flop"
-fi
-
-
-
 
 Files=("$@")
 
@@ -74,26 +36,6 @@ ErrorFiles=""
 GoodFiles=""
 pause="0"
 
-# JPEG
-if [ "$Format" == "jpg" ]; then
-		
-	echo -e "Try to convert. \n"
-	
-	for i in "${!Files[@]}"; do
-		CurrentFile="${Files[$i]}"
-		OutputFileName="${CurrentFile%.*}"
-		OutName="$OutputFileName-q$TQ$TSize$TFilter$TRotate$TFlip$TFlop.jpg"
-		FileNameWithoutPath="$(basename "$OutName")"
-		
-		if $Exec -strip $OutFlip $OutFlop $OutRotate $OutFilter $OutSize $OutQuality "$CurrentFile" "$OutName"; then
-			echo "$FileNameWithoutPath: Finished."
-		else
-			ErrorFiles="${ErrorFiles}\n $OutName"
-			pause="1";
-		fi
-	done
-fi
-
 # PNG
 if [ "$Format" == "png" ]; then
 		
@@ -102,10 +44,15 @@ if [ "$Format" == "png" ]; then
 	for i in "${!Files[@]}"; do
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
-		OutName="$OutputFileName-c$TQ$TSize$TFilter$TRotate$TFlip$TFlop.png"
+		if [ ! -e "$OutputFileName.png" ]; then
+			OutName="$OutputFileName.png"
+		else
+			OutName="$OutputFileName-new.png"
+		fi
+		
 		FileNameWithoutPath="$(basename "$OutName")"
 		
-		if $Exec -strip -fuzz 10% $OutFlip $OutFlop $OutRotate $OutFilter $OutSize $OutQuality "$CurrentFile" "$OutName"; then
+		if $Exec -strip $OutAlpha $OutQuality $OutType "$CurrentFile" "$OutName"; then
 			echo "$FileNameWithoutPath: Finished."
 		else
 			ErrorFiles="${ErrorFiles}\n $OutName"

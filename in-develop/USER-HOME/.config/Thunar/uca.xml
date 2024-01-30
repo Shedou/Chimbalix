@@ -420,21 +420,10 @@
 </action>
 <action>
 	<icon></icon>
-	<name>PNG (c9 - Slower / Smaller)</name>
-	<submenu>Image Convert/PNG</submenu>
-	<unique-id>1705856004044073-8</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 90 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon></icon>
 	<name>PNG (c6 - Default)</name>
 	<submenu>Image Convert/PNG</submenu>
 	<unique-id>1705855112929797-7</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 60 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 default %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -442,10 +431,65 @@
 </action>
 <action>
 	<icon></icon>
-	<name>PNG (c2 - Faster / Bigger)</name>
+	<name>PNG (c9 - Slower / Smaller)</name>
 	<submenu>Image Convert/PNG</submenu>
-	<unique-id>1705856814980790-9</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh png 20 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<unique-id>1705856004044073-8</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 90 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (No Alpha)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1706629163014363-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 TrueColor %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (GrayScale)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1706629247202968-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScaleAlpha %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (GrayScale, No Alpha)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1706629403258020-3</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScale %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (Indexed 256 Colors)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1706629677064405-4</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 Palette %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PNG (Black &amp; White)</name>
+	<submenu>Image Convert/PNG</submenu>
+	<unique-id>1706629793701630-5</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 BiLevel %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -471,6 +515,28 @@
 	<description></description>
 	<range>*</range>
 	<patterns>*.exe</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Run with DVXK monitoring (Full, DX9-11)</name>
+	<submenu>Wine</submenu>
+	<unique-id>1706381209719060-1</unique-id>
+	<command>terminal -e &quot;env DXVK_HUD=full,opacity=1.0 wine %f&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.exe;*.lnk</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Run with DVXK monitoring (Short, DX9-11)</name>
+	<submenu>Wine</submenu>
+	<unique-id>1706381284883383-2</unique-id>
+	<command>terminal -e &quot;env DXVK_HUD=version,api,devinfo,gpuload,fps,frametimes,drawcalls,memory,opacity=1.0 wine %f&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.exe;*.lnk</patterns>
 	<other-files/>
 </action>
 </actions>
