@@ -4,6 +4,10 @@
 * DE: Xfce 4.18.1
 * GTK: 3.24.38
 ### Base Software
+
+<details>
+  <summary>Base Software</summary>
+
 * File Managers: Thunar, Midnight Commander (CLI).
 * Archivers: Ark, Engrampa, File Roller.
 * Task Managers: System Monitoring Center, Xfce, Htop (CLI)
@@ -19,6 +23,8 @@
 * IDE: Geany.
 * Benchmarks: ChimbaBench, KDiskMark, HardInfo.
 * Wine: Staging 8.12, Winetricks, custom wine prefix.
+
+</details>
 
 ## WARNING!
 
