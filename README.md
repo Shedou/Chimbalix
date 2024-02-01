@@ -3,6 +3,22 @@
 * Debian Version: 12.2 (bookworm)
 * DE: Xfce 4.18.1
 * GTK: 3.24.38
+### Base Software
+* File Managers: Thunar, Midnight Commander (CLI).
+* Archivers: Ark, Engrampa, File Roller.
+* Task Managers: System Monitoring Center, Xfce, Htop (CLI)
+* Web Browsers: Firefox, MX Viewer.
+* Office: LibreOffice.
+* Image Viewer: Nomacs.
+* Media Player: VLC.
+* Text Editors: FeatherPad, Midnight Commander (CLI), Nano (CLI).
+* Image Editors: Krita, RawTherapee.
+* Audio Editor: Audacity.
+* Video Editor: KDEnLive.
+* 3D Modelling: Blender.
+* IDE: Geany.
+* Benchmarks: ChimbaBench, KDiskMark, HardInfo.
+* Wine: Staging 8.12, Winetricks, custom wine prefix.
 
 ## WARNING!
 
