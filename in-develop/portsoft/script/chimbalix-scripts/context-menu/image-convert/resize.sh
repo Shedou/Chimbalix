@@ -80,7 +80,7 @@ if [ "$Format" == "png" ]; then
 		fi
 		FileNameWithoutPath="$(basename "$OutName")"
 		
-		if $Exec -strip $OutFilter $OutSize $OutQualityJ "$CurrentFile" "$OutName"; then
+		if $Exec -strip $OutFilter $OutSize $OutQualityP "$CurrentFile" "$OutName"; then
 			echo "$FileNameWithoutPath: Finished."
 		else
 			ErrorFiles="${ErrorFiles}\n $OutName"
