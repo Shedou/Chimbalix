@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script version 1.1
+# Script version 1.2
 # LICENSE at the end of this file!
 # Usage: PATH_TO_SCRIPT/screenshoot.sh Screen
 # Modes (case sensitive!): Screen, Window, Region.
@@ -8,28 +8,29 @@ Mode="$1"
 UserDir=~
 OutDir="$UserDir/Pictures/Screenshoots/$Mode"
 
+ns=$(date +%N)
+r=$(($ns/1000000))
+OutName="$(date +%Y-%m-%d_%H-%M-%S-)$r.jpg"
+
 if [ "$Mode" == "Screen" ]; then
-	ns=$(date +%N)
-	r=$(($ns/1000000))
 	if [ ! -d "$OutDir" ]; then mkdir "$OutDir"
 	fi
-	xfce4-screenshooter -f -m -c -s "$OutDir/$(date +%Y-%m-%d_%H-%M-%S-)$r.jpg"
+	xfce4-screenshooter -f -m -s "$OutDir/$OutName.jpg"
+	xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
 fi
 
 if [ "$Mode" == "Window" ]; then
-	ns=$(date +%N)
-	r=$(($ns/1000000))
 	if [ ! -d "$OutDir" ]; then mkdir "$OutDir"
 	fi
-	xfce4-screenshooter -w -m -c -s "$OutDir/$(date +%Y-%m-%d_%H-%M-%S-)$r.jpg"
+	xfce4-screenshooter -w -m -s "$OutDir/$OutName.jpg"
+	xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
 fi
 
 if [ "$Mode" == "Region" ]; then
-	ns=$(date +%N)
-	r=$(($ns/1000000))
 	if [ ! -d "$OutDir" ]; then mkdir "$OutDir"
 	fi
-	xfce4-screenshooter -r -c -s "$OutDir/$(date +%Y-%m-%d_%H-%M-%S-)$r.jpg"
+	xfce4-screenshooter -r -s "$OutDir/$OutName.jpg"
+	xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
 fi
 
 # MIT License
