@@ -15,22 +15,22 @@ OutName="$(date +%Y-%m-%d_%H-%M-%S-)$r.jpg"
 if [ "$Mode" == "Screen" ]; then
 	if [ ! -d "$OutDir" ]; then mkdir "$OutDir"
 	fi
-	xfce4-screenshooter -f -m -s "$OutDir/$OutName.jpg"
-	xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
+	xfce4-screenshooter -f -m -s "$OutDir/$OutName"
+	xclip -selection clipboard -t image/png -i "$OutDir/$OutName"
 fi
 
 if [ "$Mode" == "Window" ]; then
 	if [ ! -d "$OutDir" ]; then mkdir "$OutDir"
 	fi
-	xfce4-screenshooter -w -m -s "$OutDir/$OutName.jpg"
-	xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
+	xfce4-screenshooter -w -m -s "$OutDir/$OutName"
+	xclip -selection clipboard -t image/png -i "$OutDir/$OutName"
 fi
 
 if [ "$Mode" == "Region" ]; then
 	if [ ! -d "$OutDir" ]; then mkdir "$OutDir"
 	fi
-	if xfce4-screenshooter -r -s "$OutDir/$OutName.jpg"; then
-		xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
+	if xfce4-screenshooter -r -s "$OutDir/$OutName"; then
+		xclip -selection clipboard -t image/png -i "$OutDir/$OutName"
 	fi
 fi
 
