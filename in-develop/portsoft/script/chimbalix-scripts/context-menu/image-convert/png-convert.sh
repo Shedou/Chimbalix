@@ -21,10 +21,15 @@ if [ "$Quality" != "-noquality" ]; then OutQuality="-quality $Compression"
 	TQ="$Quality"
 fi
 
-if [ "$Type" != "default" ]; then OutType="-type $Type"
+if [ "$Type" != "default" ]; then
+	OutType="-type $Type"
 	TT="$Type"
 	if [ "$Type" == "TrueColor" ] || [ "$Type" == "GrayScale" ] || [ "$Type" == "Palette" ] || [ "$Type" == "BiLevel" ]; then
 		OutAlpha="-alpha remove"
+	fi
+	if [ "$Type" == "TrueColor.B" ] || [ "$Type" == "GrayScale.B" ] || [ "$Type" == "Palette.B" ] || [ "$Type" == "BiLevel.B" ]; then
+		OutType="-type ${Type%.*}"
+		OutAlpha="-background #000000 -alpha remove"
 	fi
 fi
 

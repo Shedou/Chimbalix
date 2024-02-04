@@ -9,6 +9,7 @@
 # FileNameWithoutExtension="${FileName%.*}"
 # FileNameWithoutPath="$(basename $FileName)"
 # FilePathWithoutFileName="$(dirname $FileNameWithPath)"
+# Remove 2 first and 1 last char from String: "${String:2:-1}"
 
 # Add all arguments to variable: Files="$@"
 # Remove the first argument from the queue: shift
