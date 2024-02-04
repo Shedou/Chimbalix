@@ -29,8 +29,9 @@ fi
 if [ "$Mode" == "Region" ]; then
 	if [ ! -d "$OutDir" ]; then mkdir "$OutDir"
 	fi
-	xfce4-screenshooter -r -s "$OutDir/$OutName.jpg"
-	xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
+	if xfce4-screenshooter -r -s "$OutDir/$OutName.jpg"; then
+		xclip -selection clipboard -t image/png -i "$OutDir/$OutName.jpg"
+	fi
 fi
 
 # MIT License
