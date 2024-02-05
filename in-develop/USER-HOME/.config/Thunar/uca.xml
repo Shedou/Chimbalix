@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
+	<icon>vcs-locally-modified</icon>
+	<name>Make Executable!</name>
+	<submenu></submenu>
+	<unique-id>1707125240110573-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/make-exec.sh %F&quot;</command>
+	<description>Make the selected file executable.</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
 	<icon>extraterm</icon>
 	<name>Run in Terminal</name>
 	<submenu></submenu>
