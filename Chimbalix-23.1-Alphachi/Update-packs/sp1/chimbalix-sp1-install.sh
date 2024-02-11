@@ -57,16 +57,16 @@ if [ $Error == false ]; then echo -e "\nEnter \"${B}y${N}\" or \"${B}yes${N}\" t
 if [ "$Confirm" == "y" ] || [ "$Confirm" == "yes" ] || [ "$arg1" == "--silent" ] && [ $Error == false ]; then
 	echo -e "\nInstalling Python 3 Dependencies...\n"
 	if dpkg -s python3-venv; then echo "> python3-venv is already present. Skip."
-	else dpkg -i "$path_to_script/python-deps/python3.11-venv_3.11.2-6_amd64.deb"; fi
+	else dpkg -i "$Path_To_Script/python-deps/python3.11-venv_3.11.2-6_amd64.deb"; fi
 	
 	if dpkg -s python3.11-venv; then echo "> python3.11-venv is already present. Skip."
-	else dpkg -i "$path_to_script/python-deps/python3-venv_3.11.2-1+b1_amd64.deb"; fi
+	else dpkg -i "$Path_To_Script/python-deps/python3-venv_3.11.2-1+b1_amd64.deb"; fi
 	
 	if dpkg -s python3-setuptools-whl; then echo "> python3-setuptools-whl is already present. Skip."
-	else dpkg -i "$path_to_script/python-deps/python3-setuptools-whl_66.1.1-1_all.deb"; fi
+	else dpkg -i "$Path_To_Script/python-deps/python3-setuptools-whl_66.1.1-1_all.deb"; fi
 	
 	if dpkg -s python3-pip-whl; then echo "> python3-pip-whl is already present. Skip."
-	else dpkg -i "$path_to_script/python-deps/python3-pip-whl_23.0.1+dfsg-1_all.deb"; fi
+	else dpkg -i "$Path_To_Script/python-deps/python3-pip-whl_23.0.1+dfsg-1_all.deb"; fi
 	
 	echo -e "\nInstalling other files...\n"
 	if cp -r "$In_InstallDir/." "$Out_InstallDir"; then echo "Complete."; touch /etc/xdg/menus/*.menu; else echo "Something went wrong..."; fi
