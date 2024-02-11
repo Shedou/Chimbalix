@@ -1,0 +1,19 @@
+[Desktop Entry]
+# -= DIRECTORY =- #
+Type=Directory
+Version=1.1
+Encoding=UTF-8
+#OnlyShowIn=
+#NotShowIn=
+NoDisplay=false
+Hidden=false
+
+Name=AI
+Comment=Artificial Intelligence and Neural Networks
+#GenericName=
+
+Icon=/usr/share/desktop-directories/chi-ai.png
+
+# - Translations:
+Name[ru]=ИИ
+Comment[ru]=Искусственный Интеллект и Нейронные Сети
