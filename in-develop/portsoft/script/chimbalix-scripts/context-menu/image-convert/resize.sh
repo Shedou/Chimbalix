@@ -4,55 +4,39 @@
 
 # Font styles
 # Usage: "${B}Bold Text${N}"
-B=$(tput bold)
-N=$(tput sgr0)
+B=$(tput bold); N=$(tput sgr0)
 
 Format="$1"; shift; # arg 1
 Filter="$1"; shift; # arg 2
-Resize="$1"; shift; # arg 4
+Resize="$1"; shift; # arg 3
 
-OutQualityJ="-quality 96"
-OutQualityP="-quality 60"
+OutQualityJ="-quality 97"; OutQualityP="-quality 60"
+OutFilter="-filter $Filter"; TFilter=""
+OutSize="-resize $Resize"; TSize="-s"
 
-OutFilter="-filter $Filter"
-TFilter=""
+if [ "$Filter" == "point" ] || [ "$Filter" == "Point" ]; then TFilter="-f"; fi
+if [[ "$Resize" == *p ]]; then OutSize="-resize ${Resize::-1}%"; TSize="-sp"; fi
 
-OutSize="-resize $Resize"
-TSize=""
+Exec=convert; ErrorFiles=""; GoodFiles=""; pause="0"; Files=("$@")
 
+# CheckName function
+function CheckName {
+	local FileName="$1"; local OutFileName="$FileName.$Format"; local time="$(date +%s)"; local tx="${time:6}"
+	if [ -e "$OutFileName" ]; then OutFileName="$FileName-new.$Format"; if [ -e "$OutFileName" ]; then OutFileName="$FileName-new-$tx.$Format"; fi; fi
+	echo "$OutFileName"
+}
 
-if [ "$Filter" == "point" ] || [ "$Filter" == "Point" ]; then TFilter="-p"
-fi
-
-if [[ "$Resize" == *p ]]; then
-	OutSize="-resize ${Resize::-1}%"
-	TSize="-"
-fi
-
-
-
-Files=("$@")
-
-#
-Exec=convert
-ErrorFiles=""
-GoodFiles=""
-pause="0"
-
-# JPEG
+# JPEG Module
 if [ "$Format" == "jpg" ]; then
-		
 	echo -e "Try to convert. \n"
-	
 	for i in "${!Files[@]}"; do
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
 		OutName="$OutputFileName$TSize$TFilter"
-		if [ ! -e "$OutName.jpg" ]; then
-			OutName="$OutName.jpg"
-		else
-			OutName="$OutName-new.jpg"
-		fi
+		
+		# Check if the output file exists
+		OutName="$(CheckName "$OutName")"
+		
 		FileNameWithoutPath="$(basename "$OutName")"
 		
 		if $Exec -strip -alpha remove $OutFilter $OutSize $OutQualityJ "$CurrentFile" "$OutName"; then
@@ -64,37 +48,31 @@ if [ "$Format" == "jpg" ]; then
 	done
 fi
 
-# PNG
+# PNG Module
 if [ "$Format" == "png" ]; then
-		
 	echo -e "Try to convert. \n"
-	
 	for i in "${!Files[@]}"; do
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
 		OutName="$OutputFileName$TSize$TFilter"
-		if [ ! -e "$OutName.png" ]; then
-			OutName="$OutName.png"
-		else
-			OutName="$OutName-new.png"
-		fi
+		
+		# Check if the output file exists
+		OutName="$(CheckName "$OutName")"
+		
 		FileNameWithoutPath="$(basename "$OutName")"
 		
-		if $Exec -strip $OutFilter $OutSize $OutQualityP "$CurrentFile" "$OutName"; then
-			echo "$FileNameWithoutPath: Finished."
-		else
-			ErrorFiles="${ErrorFiles}\n $OutName"
-			pause="1";
-		fi
+		# Run prepared command
+		if $Exec -strip $OutFilter $OutSize $OutQualityP "$CurrentFile" "$OutName"; then echo "$FileNameWithoutPath: Finished."
+		else ErrorFiles="${ErrorFiles}\n $OutName"; pause="1"; fi
 	done
 fi
 
 if [ "$pause" == "1" ]; then
-	echo "-= WARNING =-"
-	echo "-= List of not finished or corrupted files:"
-	echo -e "$ErrorFiles"
-	echo -e "\n-= Not enough system memory? Or damaged files? =-"
-	echo "-= WARNING =-"
+	echo -e "\
+	-= WARNING =-
+	-= List of not finished or corrupted files:
+	$ErrorFiles
+	\n-= Not enough system memory? Or damaged files? =-"
 	read pause
 fi
 

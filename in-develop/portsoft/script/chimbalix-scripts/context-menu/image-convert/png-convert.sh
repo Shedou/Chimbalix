@@ -4,26 +4,19 @@
 
 # Font styles
 # Usage: "${B}Bold Text${N}"
-B=$(tput bold)
-N=$(tput sgr0)
+B=$(tput bold); N=$(tput sgr0)
 
 Format="$1"; shift; # arg 1
 Compression="$1"; shift; # arg 2
 Type="$1"; shift; # arg 3
 
-OutQuality=""
-OutType=""
-OutAlpha=""
-TQ="Def"
-TT=""
+OutQuality=""; OutType=""; OutAlpha=""; TQ="Def"; TT=""
 
-if [ "$Quality" != "-noquality" ]; then OutQuality="-quality $Compression"
-	TQ="$Quality"
-fi
+if [ "$Quality" != "-noquality" ]; then OutQuality="-quality $Compression"; TQ="$Quality"; fi
 
 if [ "$Type" != "default" ]; then
 	OutType="-type $Type"
-	TT="$Type"
+	TT="-$Type"
 	if [ "$Type" == "TrueColor" ] || [ "$Type" == "GrayScale" ] || [ "$Type" == "Palette" ] || [ "$Type" == "BiLevel" ]; then
 		OutAlpha="-alpha remove"
 	fi
@@ -33,13 +26,14 @@ if [ "$Type" != "default" ]; then
 	fi
 fi
 
-Files=("$@")
+Exec=convert; ErrorFiles=""; GoodFiles=""; pause="0"; Files=("$@")
 
-#
-Exec=convert
-ErrorFiles=""
-GoodFiles=""
-pause="0"
+# CheckName function
+function CheckName {
+	local FileName="$1"; local OutFileName="$FileName.$Format"; local time="$(date +%s)"; local tx="${time:6}"
+	if [ -e "$OutFileName" ]; then OutFileName="$FileName-new.$Format"; if [ -e "$OutFileName" ]; then OutFileName="$FileName-new-$tx.$Format"; fi; fi
+	echo "$OutFileName"
+}
 
 # PNG
 if [ "$Format" == "png" ]; then
@@ -49,29 +43,25 @@ if [ "$Format" == "png" ]; then
 	for i in "${!Files[@]}"; do
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
-		if [ ! -e "$OutputFileName.png" ]; then
-			OutName="$OutputFileName.png"
-		else
-			OutName="$OutputFileName-new.png"
-		fi
+		OutName="$OutputFileName$TT"
+		
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
 		
 		FileNameWithoutPath="$(basename "$OutName")"
 		
-		if $Exec -strip $OutAlpha $OutQuality $OutType "$CurrentFile" "$OutName"; then
-			echo "$FileNameWithoutPath: Finished."
-		else
-			ErrorFiles="${ErrorFiles}\n $OutName"
-			pause="1";
-		fi
+		# Run prepared command
+		if $Exec -strip $OutAlpha $OutQuality $OutType "$CurrentFile" "$OutName"; then echo "$FileNameWithoutPath: Finished."
+		else ErrorFiles="${ErrorFiles}\n $OutName"; pause="1"; fi
 	done
 fi
 
 if [ "$pause" == "1" ]; then
-	echo "-= WARNING =-"
-	echo "-= List of not finished or corrupted files:"
-	echo -e "$ErrorFiles"
-	echo -e "\n-= Not enough system memory? Or damaged files? =-"
-	echo "-= WARNING =-"
+	echo -e "\
+	-= WARNING =-
+	-= List of not finished or corrupted files:
+	$ErrorFiles
+	\n-= Not enough system memory? Or damaged files? =-"
 	read pause
 fi
 
