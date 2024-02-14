@@ -1,3 +1,6 @@
+# Chimbalix 24.1 Alphachi
+* In developing
+
 # Chimbalix 23.1 Alphachi
 * Kernel: 6.5.0-1mx-ahs-amd64
 * Debian Version: 12.2 (bookworm)
