@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
+	<icon>org.gnome.baobab</icon>
+	<name>Analyze disk space here</name>
+	<submenu></submenu>
+	<unique-id>1707498038778213-1</unique-id>
+	<command>baobab %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
 	<icon>vcs-locally-modified</icon>
 	<name>Make Executable!</name>
 	<submenu></submenu>
@@ -23,6 +34,17 @@
 	<other-files/>
 </action>
 <action>
+	<icon>utilities-terminal_su</icon>
+	<name>Run in Terminal (root)</name>
+	<submenu></submenu>
+	<unique-id>1707411748448543-1</unique-id>
+	<command>terminal -e &quot;sudo %f&quot;</command>
+	<description>Run selected file in Terminal with root previlegies</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
+<action>
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
@@ -35,7 +57,7 @@
 	<directories/>
 </action>
 <action>
-	<icon></icon>
+	<icon>folder-red-unlocked</icon>
 	<name>Open root Thunar here</name>
 	<submenu></submenu>
 	<unique-id>1391443434179984-1</unique-id>
@@ -354,10 +376,10 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize Up to 1920x1080</name>
+	<name>Resize Up to 1920x1200 - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-1</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Lanczos 1920x1080 %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Lanczos 1920x1200 %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -365,18 +387,7 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize 1920x1080</name>
-	<submenu>Image Convert/Resize/JPEG</submenu>
-	<unique-id>1705937768194085-2</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Lanczos 1920x1080! %F&quot;</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon></icon>
-	<name>Resize Up to 1600x1200</name>
+	<name>Resize Up to 1600x1200 - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-3</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Lanczos 1600x1200 %F&quot;</command>
@@ -387,7 +398,7 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize 1600x1200</name>
+	<name>Resize 1600x1200 - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-4</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Lanczos 1600x1200! %F&quot;</command>
@@ -398,7 +409,7 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize 50%</name>
+	<name>Resize 50% - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-5</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Lanczos 50p %F&quot;</command>
@@ -409,7 +420,7 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize 50% (Point Filtering)</name>
+	<name>Resize 50% (Point Filtering) - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-6</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Point 50p %F&quot;</command>
@@ -420,7 +431,7 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize 200%</name>
+	<name>Resize 200% - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-7</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Lanczos 200p %F&quot;</command>
@@ -431,7 +442,7 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize 200% (Point Filtering)</name>
+	<name>Resize 200% (Point Filtering) - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-8</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh jpg Point 200p %F&quot;</command>
@@ -442,21 +453,10 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Resize Up to 1920x1080</name>
+	<name>Resize Up to 1920x1200</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-9</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh png Lanczos 1920x1080 %F&quot;</command>
-	<description></description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon></icon>
-	<name>Resize 1920x1080</name>
-	<submenu>Image Convert/Resize/PNG</submenu>
-	<unique-id>1705937768194085-10</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh png Lanczos 1920x1080! %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/resize.sh png Lanczos 1920x1200 %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -531,7 +531,7 @@
 <action>
 	<icon></icon>
 	<name>JPEG (Quality 100)</name>
-	<submenu>Image Convert/JPEG</submenu>
+	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705840124484043-1</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 100 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -541,8 +541,19 @@
 </action>
 <action>
 	<icon></icon>
+	<name>JPEG (Quality 92)</name>
+	<submenu>Image Convert/To JPEG</submenu>
+	<unique-id>1707897144551407-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 92 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
 	<name>JPEG (Quality 85)</name>
-	<submenu>Image Convert/JPEG</submenu>
+	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705854818666342-6</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 85 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -553,7 +564,7 @@
 <action>
 	<icon></icon>
 	<name>JPEG (Quality 75)</name>
-	<submenu>Image Convert/JPEG</submenu>
+	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705850796835492-2</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 75 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -564,7 +575,7 @@
 <action>
 	<icon></icon>
 	<name>JPEG (Quality 50)</name>
-	<submenu>Image Convert/JPEG</submenu>
+	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705850869119196-3</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 50 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -575,7 +586,7 @@
 <action>
 	<icon></icon>
 	<name>JPEG (Quality 25)</name>
-	<submenu>Image Convert/JPEG</submenu>
+	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705851229808185-4</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 25 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
 	<description></description>
@@ -585,8 +596,8 @@
 </action>
 <action>
 	<icon></icon>
-	<name>PNG</name>
-	<submenu>Image Convert/PNG</submenu>
+	<name>PNG - C6</name>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1705855112929797-7</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 default %F&quot;</command>
 	<description></description>
@@ -596,8 +607,8 @@
 </action>
 <action>
 	<icon></icon>
-	<name>PNG (Q9, Slower / Smaller)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<name>PNG - C9 (Slower / Smaller)</name>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1705856004044073-8</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 90 default %F&quot;</command>
 	<description></description>
@@ -608,7 +619,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (No Alpha)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629163014363-1</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 TrueColor %F&quot;</command>
 	<description></description>
@@ -619,7 +630,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (No Alpha, Black BG)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706638460206591-6</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 TrueColor.B %F&quot;</command>
 	<description></description>
@@ -630,7 +641,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (GrayScale)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629247202968-2</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScaleAlpha %F&quot;</command>
 	<description></description>
@@ -641,7 +652,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (GrayScale, No Alpha)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629403258020-3</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScale %F&quot;</command>
 	<description></description>
@@ -652,7 +663,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (GrayScale, No Alpha, Black BG)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639054170611-7</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScale.B %F&quot;</command>
 	<description></description>
@@ -663,7 +674,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (Indexed 256 Colors)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629677064405-4</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 Palette %F&quot;</command>
 	<description></description>
@@ -674,7 +685,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (Indexed 256 Colors, Black BG)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639110908930-8</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 Palette.B %F&quot;</command>
 	<description></description>
@@ -685,7 +696,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (Black &amp; White)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629793701630-5</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 BiLevel %F&quot;</command>
 	<description></description>
@@ -696,7 +707,7 @@
 <action>
 	<icon></icon>
 	<name>PNG (Black &amp; White, Black BG)</name>
-	<submenu>Image Convert/PNG</submenu>
+	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639146742663-9</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 BiLevel.B %F&quot;</command>
 	<description></description>
