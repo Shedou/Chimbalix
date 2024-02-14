@@ -12,7 +12,7 @@ Type="$1"; shift; # arg 3
 
 OutQuality=""; OutType=""; OutAlpha=""; TQ="Def"; TT=""
 
-if [ "$Quality" != "-noquality" ]; then OutQuality="-quality $Compression"; TQ="$Quality"; fi
+if [ "$Compression" != "default" ]; then OutQuality="-quality $Compression"; TQ="$Compression"; fi
 
 if [ "$Type" != "default" ]; then
 	OutType="-type $Type"
