@@ -533,7 +533,7 @@
 	<name>JPEG (Quality 100)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705840124484043-1</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 100 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh jpg 100 TrueColor %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -544,7 +544,7 @@
 	<name>JPEG (Quality 92)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1707897144551407-2</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 92 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh jpg 92 TrueColor %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -555,7 +555,7 @@
 	<name>JPEG (Quality 85)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705854818666342-6</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 85 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh jpg 85 TrueColor %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -566,7 +566,7 @@
 	<name>JPEG (Quality 75)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705850796835492-2</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 75 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh jpg 75 TrueColor %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -577,7 +577,7 @@
 	<name>JPEG (Quality 50)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705850869119196-3</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 50 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh jpg 50 TrueColor %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -588,7 +588,7 @@
 	<name>JPEG (Quality 25)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705851229808185-4</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/image-convert.sh jpg 25 -nofilter -noresize -norotate -noflip -noflop %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh jpg 25 TrueColor %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -599,7 +599,7 @@
 	<name>PNG - C6</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1705855112929797-7</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 default %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 default %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -610,7 +610,7 @@
 	<name>PNG - C9 (Slower / Smaller)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1705856004044073-8</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 90 default %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 90 default %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -621,7 +621,7 @@
 	<name>PNG (No Alpha)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629163014363-1</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 TrueColor %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 TrueColor %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -632,7 +632,7 @@
 	<name>PNG (No Alpha, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706638460206591-6</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 TrueColor.B %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 TrueColor.B %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -643,7 +643,7 @@
 	<name>PNG (GrayScale)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629247202968-2</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScaleAlpha %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 GrayScaleAlpha %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -654,7 +654,7 @@
 	<name>PNG (GrayScale, No Alpha)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629403258020-3</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScale %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 GrayScale %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -665,7 +665,7 @@
 	<name>PNG (GrayScale, No Alpha, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639054170611-7</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 GrayScale.B %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 GrayScale.B %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -676,7 +676,7 @@
 	<name>PNG (Indexed 256 Colors)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629677064405-4</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 Palette %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 Palette %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -687,7 +687,7 @@
 	<name>PNG (Indexed 256 Colors, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639110908930-8</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 Palette.B %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 Palette.B %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -698,7 +698,7 @@
 	<name>PNG (Black &amp; White)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629793701630-5</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 BiLevel %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 BiLevel %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -709,7 +709,7 @@
 	<name>PNG (Black &amp; White, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639146742663-9</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/png-convert.sh png 60 BiLevel.B %F&quot;</command>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 BiLevel.B %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
