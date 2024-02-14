@@ -10,9 +10,12 @@ Format="$1"; shift; # arg 1
 Compression="$1"; shift; # arg 2
 Type="$1"; shift; # arg 3
 
-OutQuality=""; OutType=""; OutAlpha=""; TQ="Def"; TT=""
+# Variables
+Exec=convert; ErrorFiles=""; GoodFiles=""; pause="0"; Files=("$@")
+OutQuality=""; OutType=""; OutAlpha=""; TQ=""; TT=""
 
-if [ "$Compression" != "default" ]; then OutQuality="-quality $Compression"; TQ="$Compression"; fi
+# Processing args
+if [ "$Compression" != "default" ]; then OutQuality="-quality $Compression"; fi
 
 if [ "$Type" != "default" ]; then
 	OutType="-type $Type"
@@ -26,8 +29,6 @@ if [ "$Type" != "default" ]; then
 	fi
 fi
 
-Exec=convert; ErrorFiles=""; GoodFiles=""; pause="0"; Files=("$@")
-
 # CheckName function
 function CheckName {
 	local FileName="$1"; local OutFileName="$FileName.$Format"; local time="$(date +%s)"; local tx="${time:6}"
@@ -35,11 +36,29 @@ function CheckName {
 	echo "$OutFileName"
 }
 
-# PNG
-if [ "$Format" == "png" ]; then
-		
+# JPEG Module
+if [ "$Format" == "jpg" ]; then
+	TQ="-q$Compression"
 	echo -e "Try to convert. \n"
-	
+	for i in "${!Files[@]}"; do
+		CurrentFile="${Files[$i]}"
+		OutputFileName="${CurrentFile%.*}"
+		OutName="$OutputFileName$TQ"
+		
+		# check if the output file exists
+		OutName="$(CheckName "$OutName")"
+		
+		FileNameWithoutPath="$(basename "$OutName")"
+		
+		# Run prepared command
+		if $Exec -strip $OutAlpha $OutQuality $OutType "$CurrentFile" "$OutName"; then echo "$FileNameWithoutPath: Finished."
+		else ErrorFiles="${ErrorFiles}\n $OutName"; pause="1"; fi
+	done
+fi
+
+# PNG Module
+if [ "$Format" == "png" ]; then
+	echo -e "Try to convert. \n"
 	for i in "${!Files[@]}"; do
 		CurrentFile="${Files[$i]}"
 		OutputFileName="${CurrentFile%.*}"
