@@ -1,7 +1,7 @@
 # Chimbalix 24.1 Alphachi
 * In developing
 * Kernel: 6.6.13-1-liquorix-amd64
-### Downloads (Pre-Release 3)
+### Downloads (Pre-Release 4)
 Google Drive (Pre3, 64-bit, ISO, 4.4 GiB): https://drive.google.com/drive/folders/1MFth46Q1a0i64Y7ox-tphA8wS3DZ7my2
 
 # Chimbalix 23.1 Alphachi
