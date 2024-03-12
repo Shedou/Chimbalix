@@ -4,6 +4,11 @@
 ### Downloads (Pre-Release 6)
 Google Drive (Pre6, 64-bit, ISO, 4.2 GiB): https://drive.google.com/drive/folders/1MFth46Q1a0i64Y7ox-tphA8wS3DZ7my2
 
+|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_01_30-q85](https://github.com/Shedou/Chimbalix/assets/19572158/41baa8f7-b00b-4e11-a504-962f7b6992bf)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_03_45-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/cde2e179-e416-4ddc-b3e0-0b9a649c0f8a)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_04_14-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/d05236de-4893-44f6-ac3f-db6d0c911222)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_04_38-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/82bea8ec-bb5f-4e35-9548-6c2014cd2eb4)|
+|-|-|-|-|
+|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_04_59-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/7f4e83f9-6286-431d-a1c2-b4658d7d8829)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_08_31-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/1c36ca94-9019-4d2a-97c2-18379fd4a08a)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_10_07-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/7650673a-fcf2-4179-9ba0-2f59e239aaf1)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_12_44-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/5cea498e-8c70-49a9-9c9e-5cf1699979ea)|
+|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_12_51-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/6cfb47b7-d86d-432b-b01c-d986157bb364)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_13_10-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/1752a3b1-c600-4739-809f-a0f1109672d3)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_23_21-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/5e6d7ab0-17d2-4d7b-a5b5-6a8b7d3be838)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_23_32-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/ac8a7e9c-6038-4cdb-89e7-c1074610f51e)|
+
 # Chimbalix 23.1 Alphachi
 * Kernel: 6.5.0-1mx-ahs-amd64
 * Debian Version: 12.2 (bookworm)
