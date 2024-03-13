@@ -1,6 +1,7 @@
 # Chimbalix 24.1 Alphachi
 * In developing
 * Kernel: 6.6.13-1-liquorix-amd64
+* Debian Version: 12.2 (bookworm)
 ### Downloads (Pre-Release 6)
 Google Drive (Pre6, 64-bit, ISO, 4.2 GiB): https://drive.google.com/drive/folders/1MFth46Q1a0i64Y7ox-tphA8wS3DZ7my2
 
