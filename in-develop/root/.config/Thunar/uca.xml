@@ -30,18 +30,6 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Edit as Root</name>
-	<submenu></submenu>
-	<unique-id>1389150009142611-4</unique-id>
-	<command>/usr/bin/mx-edit-as-root.sh %f;</command>
-	<description>Make administrative changes to text files</description>
-	<range></range>
-	<patterns>*</patterns>
-	<other-files/>
-	<text-files/>
-</action>
-<action>
-	<icon></icon>
 	<name>Find files here</name>
 	<submenu></submenu>
 	<unique-id>1391015829778456-1</unique-id>
@@ -90,17 +78,6 @@
 	<text-files/>
 </action>
 <action>
-	<icon></icon>
-	<name>Make Startup Sound</name>
-	<submenu></submenu>
-	<unique-id>1447629663342880-3</unique-id>
-	<command>mkdir -p ~/.config/MX-Linux/mx-system-sounds; echo %f &gt;~/.config/MX-Linux/mx-system-sounds/startupsound.conf</command>
-	<description>Make selected Startup Sound</description>
-	<range></range>
-	<patterns>*</patterns>
-	<audio-files/>
-</action>
-<action>
 	<icon>application-x-deb</icon>
 	<name>Install Deb Files</name>
 	<submenu></submenu>
@@ -113,10 +90,10 @@
 </action>
 <action>
 	<icon>ark</icon>
-	<name>Ark - Open as Archive</name>
-	<submenu>Archive Manager</submenu>
+	<name>Ark - Open archive</name>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1703583758359340-7</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark open %d %f</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh ark open %d %F</command>
 	<description>Open file as archive</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -129,9 +106,9 @@
 <action>
 	<icon>archive</icon>
 	<name>Ark - Create archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1700763124184257-1</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark add %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh ark add %d %F</command>
 	<description>Add files to archive</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -145,9 +122,9 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Ark - Extract here</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1700763223517142-2</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark extract_here %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh ark extract_here %d %F</command>
 	<description>Extract files here</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -160,9 +137,9 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Ark - Extract to...</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Ark</submenu>
 	<unique-id>1703529849956097-1</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh ark extract_to %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh ark extract_to %d %F</command>
 	<description>Extract files to custom directory</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -174,10 +151,10 @@
 </action>
 <action>
 	<icon>org.gnome.FileRoller.Devel</icon>
-	<name>File Roller - Open as Archive</name>
-	<submenu>Archive Manager</submenu>
+	<name>File Roller - Open archive</name>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703584102943246-9</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller open %d %f</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh file-roller open %d %F</command>
 	<description>Open file as archive</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -190,9 +167,9 @@
 <action>
 	<icon>archive</icon>
 	<name>File Roller - Create archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703531833894706-1</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller add %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh file-roller add %d %F</command>
 	<description>Add files to archive</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -206,9 +183,9 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>File Roller - Extract here</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703531987741751-2</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller extract_here %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh file-roller extract_here %d %F</command>
 	<description>Extract files here</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -221,9 +198,9 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>File Roller - Extract to...</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/File Roller</submenu>
 	<unique-id>1703531991310998-3</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh file-roller extract_to %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh file-roller extract_to %d %F</command>
 	<description>Extract files to custom directory</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -235,10 +212,10 @@
 </action>
 <action>
 	<icon>ark</icon>
-	<name>Engrampa - Open as Archive</name>
-	<submenu>Archive Manager</submenu>
+	<name>Engrampa - Open archive</name>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703584294944238-10</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa open %d %f</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh engrampa open %d %F</command>
 	<description>Open file as archive</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -251,9 +228,9 @@
 <action>
 	<icon>archive</icon>
 	<name>Engrampa - Create archive</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703582908448169-4</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa add %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh engrampa add %d %F</command>
 	<description>Add files to archive</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -267,9 +244,9 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Engrampa - Extract here</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703582912311839-5</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa extract_here %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh engrampa extract_here %d %F</command>
 	<description>Extract files here</description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -282,9 +259,9 @@
 <action>
 	<icon>cm_extractfiles</icon>
 	<name>Engrampa - Extract to...</name>
-	<submenu>Archive Manager</submenu>
+	<submenu>Archive Manager/Engrampa</submenu>
 	<unique-id>1703582915316762-6</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh engrampa extract_to %d %F</command>
+	<command>/root/.config/Thunar/context_menu_archivers.sh engrampa extract_to %d %F</command>
 	<description>Extract files to custom directory</description>
 	<range>*</range>
 	<patterns>*</patterns>

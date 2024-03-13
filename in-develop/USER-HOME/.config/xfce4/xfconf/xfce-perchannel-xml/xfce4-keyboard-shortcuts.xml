@@ -32,7 +32,6 @@
       <property name="&lt;Alt&gt;&lt;Super&gt;s" type="empty"/>
     </property>
     <property name="custom" type="empty">
-      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
@@ -50,6 +49,7 @@
       <property name="&lt;Primary&gt;Print" type="string" value="/portsoft/script/chimbalix-scripts/utils/printscreen/screenshoot.sh Region"/>
       <property name="Print" type="string" value="/portsoft/script/chimbalix-scripts/utils/printscreen/screenshoot.sh Screen"/>
       <property name="&lt;Shift&gt;Print" type="string" value="/portsoft/script/chimbalix-scripts/utils/printscreen/screenshoot.sh Window"/>
+      <property name="Super_L" type="string" value="xfce4-popup-applicationsmenu"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

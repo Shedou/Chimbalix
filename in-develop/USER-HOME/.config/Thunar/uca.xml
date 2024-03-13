@@ -30,7 +30,7 @@
 	<command>terminal -e &quot;%f&quot;</command>
 	<description>Run selected file in Terminal</description>
 	<range>*</range>
-	<patterns>*</patterns>
+	<patterns>*.sh;*.bash;*.zsh</patterns>
 	<other-files/>
 </action>
 <action>
@@ -41,7 +41,7 @@
 	<command>terminal -e &quot;sudo %f&quot;</command>
 	<description>Run selected file in Terminal with root previlegies</description>
 	<range>*</range>
-	<patterns>*</patterns>
+	<patterns>*.sh;*.bash;*.zsh</patterns>
 	<other-files/>
 </action>
 <action>
@@ -49,7 +49,7 @@
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
 	<unique-id>1388590880939619-1</unique-id>
-	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<command>terminal --working-directory=%f</command>
 	<description>Launch terminal emulator here</description>
 	<range></range>
 	<patterns>*</patterns>
@@ -57,7 +57,7 @@
 	<directories/>
 </action>
 <action>
-	<icon>folder-red-unlocked</icon>
+	<icon>folder-carmine</icon>
 	<name>Open root Thunar here</name>
 	<submenu></submenu>
 	<unique-id>1391443434179984-1</unique-id>
@@ -68,7 +68,7 @@
 	<directories/>
 </action>
 <action>
-	<icon></icon>
+	<icon>osmo-editor-find</icon>
 	<name>Find files here</name>
 	<submenu></submenu>
 	<unique-id>1391015829778456-1</unique-id>
@@ -80,7 +80,7 @@
 	<text-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>edit-link</icon>
 	<name>Create symlink</name>
 	<submenu></submenu>
 	<unique-id>1394124450909421-1</unique-id>
@@ -94,22 +94,7 @@
 	<text-files/>
 </action>
 <action>
-	<icon></icon>
-	<name>Compute sha/md5sum</name>
-	<submenu></submenu>
-	<unique-id>1426501025005582-4</unique-id>
-	<command>yad --info --title=&quot;Computed checksums for %n&quot; --text=&quot;$(echo; echo -n &apos;md5:     &apos; `md5sum %n | awk &apos;{print $1}&apos;`; echo; echo &apos;sha256:&apos; `sha256sum %n | awk &apos;{print $1}&apos;`)&quot; --height=280 --center --button=gtk-close | yad --width=350 --height=250 --progress --percentage=&quot;50&quot; --auto-kill --auto-close --title=&quot;Checksum utility&quot; --text=&quot;Calculating checksums for %n&quot;  --center --button=gtk-close</command>
-	<description>Display checksum of ISO</description>
-	<range></range>
-	<patterns>*</patterns>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
-	<icon></icon>
+	<icon>dvdisaster</icon>
 	<name>Check data integrity</name>
 	<submenu></submenu>
 	<unique-id>1426501047462724-5</unique-id>
@@ -119,17 +104,6 @@
 	<patterns>*.md5;*.md5sum;*.sha;*.shasum;*.sha1;*.sha1sum;*.sha224;*.sha224sum;*.sha256;*.sha256sum;*.sha384;*.sha384sum;*.sha512;*.sha512sum</patterns>
 	<other-files/>
 	<text-files/>
-</action>
-<action>
-	<icon></icon>
-	<name>Make Startup Sound</name>
-	<submenu></submenu>
-	<unique-id>1447629663342880-3</unique-id>
-	<command>mkdir -p ~/.config/MX-Linux/mx-system-sounds; echo %f &gt;~/.config/MX-Linux/mx-system-sounds/startupsound.conf</command>
-	<description>Make selected Startup Sound</description>
-	<range></range>
-	<patterns>*</patterns>
-	<audio-files/>
 </action>
 <action>
 	<icon>application-x-deb</icon>
@@ -143,15 +117,60 @@
 	<other-files/>
 </action>
 <action>
-	<icon>/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.png</icon>
-	<name>Check MIME-type</name>
-	<submenu>Tools</submenu>
-	<unique-id>1705560390347026-1</unique-id>
-	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.sh %F&quot;</command>
-	<description>Check the MIME type of the selected file/files</description>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_app.png</icon>
+	<name>PeaZip - Open as Archive</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-1</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip open %d %f</command>
+	<description>Open file as archive</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_package.png</icon>
+	<name>PeaZip - Create archive</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-2</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip add %d %F</command>
+	<description>Add files to archive</description>
 	<range>*</range>
 	<patterns>*</patterns>
 	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_extract_alt.png</icon>
+	<name>PeaZip - Extract here</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-3</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip extract_here %d %F</command>
+	<description>Extract files here</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_extract.png</icon>
+	<name>PeaZip - Extract to...</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-4</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip extract_to %d %F</command>
+	<description>Extract files to custom directory</description>
+	<range>*</range>
+	<patterns>*</patterns>
 	<audio-files/>
 	<image-files/>
 	<other-files/>
@@ -335,6 +354,51 @@
 	<description>Extract files to custom directory</description>
 	<range>*</range>
 	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>gtkhash</icon>
+	<name>Checksum (GTK Hash)</name>
+	<submenu>Tools</submenu>
+	<unique-id>1710227856051603-1</unique-id>
+	<command>gtkhash %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>quickhash</icon>
+	<name>Checksum (Pea)</name>
+	<submenu>Tools</submenu>
+	<unique-id>1709993324616117-1</unique-id>
+	<command>/portsoft/x86_64/peazip_portable/pea %F</command>
+	<description>Display checksum of file/files</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.png</icon>
+	<name>Check MIME-type</name>
+	<submenu>Tools</submenu>
+	<unique-id>1705560390347026-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/tools/check-mime.sh %F&quot;</command>
+	<description>Check the MIME type of the selected file/files</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
 	<audio-files/>
 	<image-files/>
 	<other-files/>

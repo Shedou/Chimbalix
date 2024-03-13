@@ -12,26 +12,9 @@ Act="$1"; shift; # arg 2
 Path="$1"; shift; # arg 3
 
 # Paths to arcivers executables
-Pea_exec=/portsoft/x86_64/peazip_portable/peazip
 Ark_exec=ark
 File_Roller_exec=file-roller
 Engrampa_exec=engrampa
-
-# PeaZip
-if [ "$Archiver" == "peazip" ]; then
-	if [ "$Act" == "open" ]; then
-		exec $Pea_exec -ext2openasarchive "$1"
-	fi
-	if [ "$Act" == "add" ]; then
-		exec $Pea_exec -add2archive "$@"
-	fi
-	if [ "$Act" == "extract_here" ]; then
-		exec $Pea_exec -ext2folder "$@"
-	fi
-	if [ "$Act" == "extract_to" ]; then
-		exec $Pea_exec -ext2main "$@"
-	fi
-fi
 
 # Ark
 if [ "$Archiver" == "ark" ]; then
