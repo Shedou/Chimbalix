@@ -46,7 +46,7 @@ Google Drive (Pre6, 64-bit, ISO, 4.2 GiB): https://drive.google.com/drive/folder
 </details>
 
 ## Репозитории компонентов дистрибутива
-Список репозиториев с исходным кодом приложений, из которых состоит дистрибутив Chimbalix.
+Список репозиториев с исходным кодом приложений, которые включены/могут быть включены дистрибутив Chimbalix.
 
 Список будет дополняться по мере необходимости.
 
@@ -56,6 +56,7 @@ Google Drive (Pre6, 64-bit, ISO, 4.2 GiB): https://drive.google.com/drive/folder
 * Скрипты для Chimbalix Linux: [chimbalix-scripts](https://github.com/Shedou/chimbalix-scripts)
 * Программа установки дистрибутива: [chimbalix-installer](https://github.com/Shedou/chimbalix-installer)
 * Программа создания ISO образа дистрибутива: [chimbalix-snapshot](https://github.com/Shedou/chimbalix-snapshot)
+* Анализатор использованного места на дисках Baobab: [chimbalix-baobab](https://github.com/Shedou/chimbalix-baobab)
 
 </details>
 
