@@ -1,18 +1,9 @@
 # Chimbalix 24.1 Alphachi
 * В разработке
-* Ядро: 6.6.13-1-liquorix-amd64
+* 64-Bit (x86_64)
+* Ядро: 6.7.12-1-liquorix-amd64
 * Версия Debian: 12.x (bookworm)
 * DE: Xfce 4.18.1
-
-<details>
-  <summary>Скриншоты</summary>
-
-|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_01_30-q85](https://github.com/Shedou/Chimbalix/assets/19572158/41baa8f7-b00b-4e11-a504-962f7b6992bf)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_03_45-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/cde2e179-e416-4ddc-b3e0-0b9a649c0f8a)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_04_14-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/d05236de-4893-44f6-ac3f-db6d0c911222)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_04_38-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/82bea8ec-bb5f-4e35-9548-6c2014cd2eb4)|
-|-|-|-|-|
-|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_04_59-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/7f4e83f9-6286-431d-a1c2-b4658d7d8829)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_08_31-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/1c36ca94-9019-4d2a-97c2-18379fd4a08a)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_10_07-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/7650673a-fcf2-4179-9ba0-2f59e239aaf1)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_12_44-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/5cea498e-8c70-49a9-9c9e-5cf1699979ea)|
-|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_12_51-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/6cfb47b7-d86d-432b-b01c-d986157bb364)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_13_10-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/1752a3b1-c600-4739-809f-a0f1109672d3)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_23_21-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/5e6d7ab0-17d2-4d7b-a5b5-6a8b7d3be838)|![VirtualBox_Chimbalix 24 1 Alphachi_12_03_2024_19_23_32-q85-q75](https://github.com/Shedou/Chimbalix/assets/19572158/ac8a7e9c-6038-4cdb-89e7-c1074610f51e)|
-
-</details>
 
 ## ВНИМАНИЕ!
 
@@ -22,18 +13,19 @@ Chimbalix Linux ( github.com/Shedou/Chimbalix ) основан на дистри
 
 ПРЕДУПРЕЖДЕНИЕ! Бездумная установка обновлений через *sudo apt upgrade / sudo apt-get upgrade* или менеджеры пакетов не рекомендуется! Это может нарушить порядок в системе и привести к характерным для многих Linux дистрибутивов проблемам, например к поломке драйвера видеокарты! Пожалуйста, будьте осторожны при работе с репозиториями!
 
-## Загрузки (текущая доступная версия Pre-Release 6)
-Google Drive (Pre6, 64-bit, ISO, 4.2 GiB): https://drive.google.com/drive/folders/1MFth46Q1a0i64Y7ox-tphA8wS3DZ7my2
+## Загрузки (текущая доступная версия Pre-Release 7)
+
+GitHub (7-Zip, 2 parts): [Chimbalix 24.1 Alphachi-Pre7](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_241_pre7) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_241_pre7/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_241_pre7)
+
+Google Drive (Pre7, ISO, 4.0 GiB): https://drive.google.com/file/d/1kH9vcQgqyT-QUVOQyMexxGanE80Xf_qy
 
 ## Интересные приложения
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
 
-<details>
-  <summary>-= Список =-</summary>
+* Каталог приложений для Chimbalix Linux: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
 
 * Генерация изображений с помощью нейронных сетей: [Сборка Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
 
-</details>
 
 ## Проекты требующие исправления / доработки
 Проекты явно требующие исправления / доработки, функционал которых реализован не до конца, или работает неправильно.
