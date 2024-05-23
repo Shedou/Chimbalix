@@ -30,7 +30,7 @@
 	<command>terminal -e &quot;%f&quot;</command>
 	<description>Run selected file in Terminal</description>
 	<range>*</range>
-	<patterns>*.sh;*.bash;*.zsh</patterns>
+	<patterns>*</patterns>
 	<other-files/>
 </action>
 <action>
@@ -41,7 +41,7 @@
 	<command>terminal -e &quot;sudo %f&quot;</command>
 	<description>Run selected file in Terminal with root previlegies</description>
 	<range>*</range>
-	<patterns>*.sh;*.bash;*.zsh</patterns>
+	<patterns>*</patterns>
 	<other-files/>
 </action>
 <action>
@@ -404,6 +404,17 @@
 	<other-files/>
 	<text-files/>
 	<video-files/>
+</action>
+<action>
+	<icon>application-x-iso9660-appimage</icon>
+	<name>Extract &quot;AppImage&quot;</name>
+	<submenu>Tools</submenu>
+	<unique-id>1716458200969357-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/tools/appimage-extract.sh %f&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.appimage;*.AppImage</patterns>
+	<other-files/>
 </action>
 <action>
 	<icon>/portsoft/script/chimbalix-scripts/context-menu/video-encode/icon-hevc.png</icon>
