@@ -24,9 +24,10 @@
 # 	Current_Array_Number="$i"
 # done
 
-## Insert data into an array and place data from the array into another file after the line "SEARCH_THIS_TEXT_IN_FILE":
+## Insert data into an array and place data from the array into file "mod_file.sh" after the line "SEARCH_THIS_TEXT_IN_mod_file":
 # DirFiles=()
 # readarray -t DirFiles < <(ls "/portsoft/x86_64/")
+# DirFiles=( $(ls "/portsoft/x86_64/") ) # Another variant
 #
 # for Number in "${!DirFiles[@]}"; do
 #	CurrentFile="${DirFiles[$Number]}"
