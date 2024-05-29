@@ -5,6 +5,7 @@
 # Path_To_Script="$( dirname "$(readlink -f "$0")")"
 # Current User Name: $USER
 # Pause: read pause
+# MD5_OF_FILE=`md5sum "filename.zip" | awk '{print $1}'`
 
 # FileNameWithoutExtension="${FileName%.*}"
 # FileNameWithoutPath="$(basename $FileName)"
