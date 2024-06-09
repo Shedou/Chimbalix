@@ -22,7 +22,7 @@ Google Drive (Pre7, ISO, 4.0 GiB): https://drive.google.com/file/d/1kH9vcQgqyT-Q
 ## Интересные приложения
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
 
-* Каталог приложений для Chimbalix Linux: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
+* Каталог приложений для Chimbalix: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
 
 * Генерация изображений с помощью нейронных сетей: [Сборка Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
 
@@ -33,7 +33,7 @@ Google Drive (Pre7, ISO, 4.0 GiB): https://drive.google.com/file/d/1kH9vcQgqyT-Q
 <details>
   <summary>-= Список =-</summary>
 
-* Скрипты для Chimbalix Linux: [chimbalix-scripts](https://github.com/Shedou/chimbalix-scripts)
+* Скрипты для Chimbalix: [chimbalix-scripts](https://github.com/Shedou/chimbalix-scripts)
 
 </details>
 
@@ -45,7 +45,7 @@ Google Drive (Pre7, ISO, 4.0 GiB): https://drive.google.com/file/d/1kH9vcQgqyT-Q
 <details>
   <summary>-= Список =-</summary>
 
-* Скрипты для Chimbalix Linux: [chimbalix-scripts](https://github.com/Shedou/chimbalix-scripts)
+* Скрипты для Chimbalix: [chimbalix-scripts](https://github.com/Shedou/chimbalix-scripts)
 * Программа установки дистрибутива: [chimbalix-installer](https://github.com/Shedou/chimbalix-installer)
 * Программа создания ISO образа дистрибутива: [chimbalix-snapshot](https://github.com/Shedou/chimbalix-snapshot)
 * Анализатор использованного места на дисках Baobab: [chimbalix-baobab](https://github.com/Shedou/chimbalix-baobab)
