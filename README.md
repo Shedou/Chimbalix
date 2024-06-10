@@ -1,4 +1,4 @@
-# Chimbalix 24.1 Alphachi
+# Chimbalix 24.2 Alphachi
 * В разработке
 * 64-Bit (x86_64)
 * Ядро: 6.7.12-1-liquorix-amd64
@@ -13,16 +13,16 @@ Chimbalix Linux ( github.com/Shedou/Chimbalix ) основан на дистри
 
 ПРЕДУПРЕЖДЕНИЕ! Бездумная установка обновлений через *sudo apt upgrade / sudo apt-get upgrade* или менеджеры пакетов не рекомендуется! Это может нарушить порядок в системе и привести к характерным для многих Linux дистрибутивов проблемам, например к поломке драйвера видеокарты! Пожалуйста, будьте осторожны при работе с репозиториями!
 
-## Загрузки (текущая доступная версия Pre-Release 7)
+## Загрузки
 
-GitHub (7-Zip, 2 parts): [Chimbalix 24.1 Alphachi-Pre7](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_241_pre7) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_241_pre7/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_241_pre7)
+GitHub (7-Zip, 2 parts): [Chimbalix 24.2 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_242) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_242/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_242)
 
-Google Drive (Pre7, ISO, 4.0 GiB): https://drive.google.com/file/d/1kH9vcQgqyT-QUVOQyMexxGanE80Xf_qy
+Google Drive (ISO, 3.8 GiB): Будет позже...
 
 ## Интересные приложения
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
 
-* Каталог приложений для Chimbalix: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
+* Каталог приложений для Chimbalix (в начальной стадии): [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
 
 * Генерация изображений с помощью нейронных сетей: [Сборка Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
 
