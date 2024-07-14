@@ -117,67 +117,6 @@
 	<other-files/>
 </action>
 <action>
-	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_app.png</icon>
-	<name>PeaZip - Open as Archive</name>
-	<submenu>Archive Manager/PeaZip</submenu>
-	<unique-id>1703583758355555-1</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip open %d %f</command>
-	<description>Open file as archive</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
-	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_package.png</icon>
-	<name>PeaZip - Create archive</name>
-	<submenu>Archive Manager/PeaZip</submenu>
-	<unique-id>1703583758355555-2</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip add %d %F</command>
-	<description>Add files to archive</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<directories/>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
-	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_extract_alt.png</icon>
-	<name>PeaZip - Extract here</name>
-	<submenu>Archive Manager/PeaZip</submenu>
-	<unique-id>1703583758355555-3</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip extract_here %d %F</command>
-	<description>Extract files here</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
-	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_extract.png</icon>
-	<name>PeaZip - Extract to...</name>
-	<submenu>Archive Manager/PeaZip</submenu>
-	<unique-id>1703583758355555-4</unique-id>
-	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip extract_to %d %F</command>
-	<description>Extract files to custom directory</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<audio-files/>
-	<image-files/>
-	<other-files/>
-	<text-files/>
-	<video-files/>
-</action>
-<action>
 	<icon>ark</icon>
 	<name>Ark - Open as Archive</name>
 	<submenu>Archive Manager/Ark</submenu>
@@ -361,6 +300,67 @@
 	<video-files/>
 </action>
 <action>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_app.png</icon>
+	<name>PeaZip - Open as Archive</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-1</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip open %d %f</command>
+	<description>Open file as archive</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_package.png</icon>
+	<name>PeaZip - Create archive</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-2</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip add %d %F</command>
+	<description>Add files to archive</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_extract_alt.png</icon>
+	<name>PeaZip - Extract here</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-3</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip extract_here %d %F</command>
+	<description>Extract files here</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>/portsoft/x86_64/peazip_portable/res/share/icons/peazip_extract.png</icon>
+	<name>PeaZip - Extract to...</name>
+	<submenu>Archive Manager/PeaZip</submenu>
+	<unique-id>1703583758355555-4</unique-id>
+	<command>/portsoft/script/chimbalix-scripts/context-menu/archivers/archivers.sh peazip extract_to %d %F</command>
+	<description>Extract files to custom directory</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
 	<icon>gtkhash</icon>
 	<name>Checksum (GTK Hash)</name>
 	<submenu>Tools</submenu>
@@ -450,7 +450,7 @@
 	<video-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>Resize Up to 1920x1200 - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-1</unique-id>
@@ -461,7 +461,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>Resize Up to 1600x1200 - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-3</unique-id>
@@ -472,7 +472,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>Resize 1600x1200 - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-4</unique-id>
@@ -483,7 +483,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>Resize 50% - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-5</unique-id>
@@ -494,7 +494,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>Resize 50% (Point Filtering) - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-6</unique-id>
@@ -505,7 +505,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>Resize 200% - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-7</unique-id>
@@ -516,7 +516,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>Resize 200% (Point Filtering) - JPEG</name>
 	<submenu>Image Convert/Resize/JPEG</submenu>
 	<unique-id>1705937768194085-8</unique-id>
@@ -527,7 +527,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>Resize Up to 1920x1200</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-9</unique-id>
@@ -538,7 +538,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>Resize Up to 1600x1200</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-11</unique-id>
@@ -549,7 +549,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>Resize 1600x1200</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-12</unique-id>
@@ -560,7 +560,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>Resize 50%</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-13</unique-id>
@@ -571,7 +571,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>Resize 50% (Point Filtering)</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-14</unique-id>
@@ -582,7 +582,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>Resize 200%</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-15</unique-id>
@@ -593,7 +593,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>Resize 200% (Point Filtering)</name>
 	<submenu>Image Convert/Resize/PNG</submenu>
 	<unique-id>1705937768194085-16</unique-id>
@@ -604,7 +604,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>JPEG (Quality 100)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705840124484043-1</unique-id>
@@ -615,7 +615,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>JPEG (Quality 92)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1707897144551407-2</unique-id>
@@ -626,7 +626,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>JPEG (Quality 85)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705854818666342-6</unique-id>
@@ -637,7 +637,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>JPEG (Quality 75)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705850796835492-2</unique-id>
@@ -648,7 +648,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>JPEG (Quality 50)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705850869119196-3</unique-id>
@@ -659,7 +659,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/jpeg.png</icon>
 	<name>JPEG (Quality 25)</name>
 	<submenu>Image Convert/To JPEG</submenu>
 	<unique-id>1705851229808185-4</unique-id>
@@ -670,7 +670,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG - C6</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1705855112929797-7</unique-id>
@@ -681,7 +681,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG - C9 (Slower / Smaller)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1705856004044073-8</unique-id>
@@ -692,7 +692,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (No Alpha)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629163014363-1</unique-id>
@@ -703,7 +703,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (No Alpha, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706638460206591-6</unique-id>
@@ -714,7 +714,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (GrayScale)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629247202968-2</unique-id>
@@ -725,7 +725,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (GrayScale, No Alpha)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629403258020-3</unique-id>
@@ -736,7 +736,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (GrayScale, No Alpha, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639054170611-7</unique-id>
@@ -747,7 +747,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (Indexed 256 Colors)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629677064405-4</unique-id>
@@ -758,7 +758,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (Indexed 256 Colors, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639110908930-8</unique-id>
@@ -769,7 +769,7 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (Black &amp; White)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706629793701630-5</unique-id>
@@ -780,11 +780,132 @@
 	<image-files/>
 </action>
 <action>
-	<icon></icon>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/png.png</icon>
 	<name>PNG (Black &amp; White, Black BG)</name>
 	<submenu>Image Convert/To PNG</submenu>
 	<unique-id>1706639146742663-9</unique-id>
 	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh png 60 BiLevel.B %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/webp.png</icon>
+	<name>WebP (Quality 100)</name>
+	<submenu>Image Convert/To WebP</submenu>
+	<unique-id>1720357066702372-5</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh webp 100 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/webp.png</icon>
+	<name>WebP (Quality 90)</name>
+	<submenu>Image Convert/To WebP</submenu>
+	<unique-id>1720358367409393-6</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh webp 90 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/webp.png</icon>
+	<name>WebP (Quality 85)</name>
+	<submenu>Image Convert/To WebP</submenu>
+	<unique-id>1720358521656458-8</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh webp 85 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/webp.png</icon>
+	<name>WebP (Quality 75)</name>
+	<submenu>Image Convert/To WebP</submenu>
+	<unique-id>1720358388232525-7</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh webp 75 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/webp.png</icon>
+	<name>WebP (Quality 50)</name>
+	<submenu>Image Convert/To WebP</submenu>
+	<unique-id>1720209725278064-1</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh webp 50 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>/portsoft/script/chimbalix-scripts/context-menu/image-convert/icons/webp.png</icon>
+	<name>WebP (Quality 25)</name>
+	<submenu>Image Convert/To WebP</submenu>
+	<unique-id>1720246801932992-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/img-convert.sh webp 25 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>DeNoise 3</name>
+	<submenu>Image Convert/AI/Waifu2X</submenu>
+	<unique-id>1720252513550027-3</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/waifu2x-ncnn/w2x-convert.sh Noise 3 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>DeNoise 2</name>
+	<submenu>Image Convert/AI/Waifu2X</submenu>
+	<unique-id>1720254194679311-4</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/waifu2x-ncnn/w2x-convert.sh Noise 3 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>DeNoise 1</name>
+	<submenu>Image Convert/AI/Waifu2X</submenu>
+	<unique-id>1720255853935390-6</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/waifu2x-ncnn/w2x-convert.sh Noise 1 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Scale 2X</name>
+	<submenu>Image Convert/AI/Waifu2X</submenu>
+	<unique-id>1720254217864615-5</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/waifu2x-ncnn/w2x-convert.sh Scale 2 default %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Scale 2X (UpConv7 Photo)</name>
+	<submenu>Image Convert/AI/Waifu2X</submenu>
+	<unique-id>1720854759538278-2</unique-id>
+	<command>terminal -e &quot;/portsoft/script/chimbalix-scripts/context-menu/image-convert/waifu2x-ncnn/w2x-convert.sh Scale 2 models-upconv_7_photo %F&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*</patterns>
@@ -806,7 +927,7 @@
 	<name>Run with fps limit (DXVK_FRAME_RATE=120)</name>
 	<submenu>Wine</submenu>
 	<unique-id>1706022484060464-2</unique-id>
-	<command>terminal -e &quot;env LC_ALL=ru_RU.UTF-8 DXVK_FRAME_RATE=120 wine %f&quot;</command>
+	<command>terminal -e &quot;env LC_ALL=ru_RU.UTF-8 DXVK_HUD=api,fps,opacity=1.0 DXVK_FRAME_RATE=120 wine %f&quot;</command>
 	<description></description>
 	<range>*</range>
 	<patterns>*.exe</patterns>
@@ -832,6 +953,17 @@
 	<description></description>
 	<range>*</range>
 	<patterns>*.exe;*.lnk</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Run with &quot;LC_ALL&quot;</name>
+	<submenu>Wine</submenu>
+	<unique-id>1720969203515217-1</unique-id>
+	<command>terminal -e &quot;env LC_ALL=ja_JP.UTF-8 wine %f&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.exe</patterns>
 	<other-files/>
 </action>
 </actions>
