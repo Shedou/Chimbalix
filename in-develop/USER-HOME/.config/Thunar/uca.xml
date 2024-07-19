@@ -913,25 +913,39 @@
 </action>
 <action>
 	<icon></icon>
-	<name>Run with &quot;LC_ALL=ru_RU.UTF-8&quot;</name>
+	<name>Run with &quot;Locale=ru RU.UTF-8&quot;</name>
 	<submenu>Wine</submenu>
 	<unique-id>1706022113138794-1</unique-id>
 	<command>terminal -e &quot;env LC_ALL=ru_RU.UTF-8 wine %f&quot;</command>
 	<description></description>
 	<range>*</range>
-	<patterns>*.exe</patterns>
+	<patterns>*.exe;*.lnk;*.bat</patterns>
 	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Run with &quot;Locale=en EN.UTF-8&quot;</name>
+	<submenu>Wine</submenu>
+	<unique-id>1720969203515217-1</unique-id>
+	<command>terminal -e &quot;env LC_ALL=en_EN.UTF-8 wine %f&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*.exe;*.lnk;*.bat</patterns>
+	<other-files/>
+	<text-files/>
 </action>
 <action>
 	<icon></icon>
 	<name>Run with fps limit (DXVK_FRAME_RATE=120)</name>
 	<submenu>Wine</submenu>
 	<unique-id>1706022484060464-2</unique-id>
-	<command>terminal -e &quot;env LC_ALL=ru_RU.UTF-8 DXVK_HUD=api,fps,opacity=1.0 DXVK_FRAME_RATE=120 wine %f&quot;</command>
+	<command>terminal -e &quot;env DXVK_HUD=api,fps,opacity=1.0 DXVK_FRAME_RATE=120 wine %f&quot;</command>
 	<description></description>
 	<range>*</range>
-	<patterns>*.exe</patterns>
+	<patterns>*.exe;*.lnk;*.bat</patterns>
 	<other-files/>
+	<text-files/>
 </action>
 <action>
 	<icon></icon>
@@ -941,8 +955,9 @@
 	<command>terminal -e &quot;env DXVK_HUD=full,opacity=1.0 wine %f&quot;</command>
 	<description></description>
 	<range>*</range>
-	<patterns>*.exe;*.lnk</patterns>
+	<patterns>*.exe;*.lnk;*.bat</patterns>
 	<other-files/>
+	<text-files/>
 </action>
 <action>
 	<icon></icon>
@@ -952,18 +967,20 @@
 	<command>terminal -e &quot;env DXVK_HUD=version,api,devinfo,gpuload,fps,frametimes,drawcalls,memory,opacity=1.0 wine %f&quot;</command>
 	<description></description>
 	<range>*</range>
-	<patterns>*.exe;*.lnk</patterns>
+	<patterns>*.exe;*.lnk;*.bat</patterns>
 	<other-files/>
+	<text-files/>
 </action>
 <action>
 	<icon></icon>
-	<name>Run with &quot;LC_ALL&quot;</name>
+	<name>Run with &quot;Mango HUD&quot;</name>
 	<submenu>Wine</submenu>
-	<unique-id>1720969203515217-1</unique-id>
-	<command>terminal -e &quot;env LC_ALL=ja_JP.UTF-8 wine %f&quot;</command>
+	<unique-id>1721404681847782-1</unique-id>
+	<command>terminal -e &quot;mangohud wine %f&quot;</command>
 	<description></description>
 	<range>*</range>
-	<patterns>*.exe</patterns>
+	<patterns>*.exe;*.lnk;*.bat</patterns>
 	<other-files/>
+	<text-files/>
 </action>
 </actions>
