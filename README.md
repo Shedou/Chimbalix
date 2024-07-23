@@ -28,6 +28,8 @@ GitHub (7-Zip, 2 parts): [Chimbalix 24.3 Alphachi](https://github.com/Shedou/Chi
 
 Google Drive (ISO, 3.7 GiB): https://drive.google.com/file/d/1SuFSK3OwIFpEF9NYQmipEway6Q5Rk_au/view
 
+MD5: 8fe988eae664dd4ec3b96817ccddd714
+
 ## Интересные приложения
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
 
