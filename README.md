@@ -1,7 +1,7 @@
-# Chimbalix 24.2 Alphachi
+# Chimbalix 24.3 Alphachi
 * В разработке
 * 64-Bit (x86_64)
-* Ядро: 6.7.12-1-liquorix-amd64
+* Ядро: 6.9.10-1-liquorix-amd64
 * Версия Debian: 12.x (bookworm)
 * DE: Xfce 4.18.1
 ### Особенности:
@@ -12,6 +12,7 @@
 * "Apps" - стабильный раздел меню "Пуск" для сторонних приложений, позволяет разработчикам иметь свои собственные разделы меню для приложений.
 * Wine - позволяет запускать Windows приложения, хотя для этого лучше всё же использовать настоящую Windows...
 * Полезные инструменты - в контекстное меню проводника встроены полезные инструменты, например конвертация изображений/видео, получение информации о файлах и т.п.
+* Mangohud - запуск игр с оверлеем через контекстное меню проводника (может не работать с некоторыми играми).
 
 ## ВНИМАНИЕ!
 
@@ -23,9 +24,9 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 
 ## Загрузки
 
-GitHub (7-Zip, 2 parts): [Chimbalix 24.2 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_242) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_242/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_242)
+GitHub (7-Zip, 2 parts): [Chimbalix 24.3 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_243) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_243/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_243)
 
-Google Drive (ISO, 3.8 GiB): https://drive.google.com/file/d/1lb8A4AZ6DKWwcWlnjOSQBb3U54rRiQRk/view
+Google Drive (ISO, 3.8 GiB): ...
 
 ## Интересные приложения
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
