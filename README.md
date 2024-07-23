@@ -26,7 +26,7 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 
 GitHub (7-Zip, 2 parts): [Chimbalix 24.3 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_243) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_243/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_243)
 
-Google Drive (ISO, 3.8 GiB): (https://drive.google.com/file/d/1SuFSK3OwIFpEF9NYQmipEway6Q5Rk_au/view
+Google Drive (ISO, 3.7 GiB): (https://drive.google.com/file/d/1SuFSK3OwIFpEF9NYQmipEway6Q5Rk_au/view
 
 ## Интересные приложения
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
