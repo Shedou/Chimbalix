@@ -1,3 +1,5 @@
+## Language / Язык
+**Original (Russian)** - [Transtlated (English)](https://github.com/Shedou/Chimbalix/blob/main/README-EN.md)
 # Chimbalix 24.3 Alphachi
 * В разработке
 * 64-Bit (x86_64)
