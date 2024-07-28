@@ -14,7 +14,7 @@
 * "PortSoft" - the main directory for applications, allowing you to place even completely portable software in it.
 * By default, the nested structure of the "Start" menu.
 * "Apps" - a stable section of the "Start" menu for third-party applications, allows developers to have their own menu sections for applications.
-* Wine - allows you to run Windows applications, although it is better to use real Windows for this...
+* Wine (Proton LG) - allows you to run Windows applications, although it is better to use real Windows for this...
 * Useful tools - useful tools are built into the Explorer context menu, such as converting images/videos, getting information about files, etc.
 * Mangohud - launching games with an overlay via the Explorer context menu (may not work with some games).
 
