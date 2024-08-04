@@ -2,7 +2,6 @@
 [Original (Russian)](https://github.com/Shedou/Chimbalix) - **Transtlated (English)**
 
 # Chimbalix 24.3 Alphachi
-* In development
 * 64-Bit (x86_64)
 * Kernel: 6.9.10-1-liquorix-amd64
 * Debian version: 12.x (bookworm)
