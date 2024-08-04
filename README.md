@@ -1,7 +1,6 @@
 ## Language / Язык
 **Original (Russian)** - [Transtlated (English)](https://github.com/Shedou/Chimbalix/blob/main/README-EN.md)
 # Chimbalix 24.3 Alphachi
-* В разработке
 * 64-Bit (x86_64)
 * Ядро: 6.9.10-1-liquorix-amd64
 * Версия Debian: 12.x (bookworm)
