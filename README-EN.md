@@ -1,22 +1,6 @@
 ## Language / Язык
 [Original (Russian)](https://github.com/Shedou/Chimbalix) - **Transtlated (English)**
 
-# Chimbalix 24.3 Alphachi
-* 64-Bit (x86_64)
-* Kernel: 6.9.10-1-liquorix-amd64
-* Debian version: 12.x (bookworm)
-* DE: Xfce 4.18.1
-
-### Features:
-* x32 libraries out of the box - allow you to run and use 32-bit software in a 64-bit OS.
-* One-click screenshots - use ctrl / shift / ctrl+shift combinations with PrintScreen to quickly create screenshots.
-* "PortSoft" - the main directory for applications, allowing you to place even completely portable software in it.
-* By default, the nested structure of the "Start" menu.
-* "Apps" - a stable section of the "Start" menu for third-party applications, allows developers to have their own menu sections for applications.
-* WINE (Proton LG) - allows you to run Windows applications, although it is better to use real Windows for this...
-* Useful tools - useful tools are built into the Explorer context menu, such as converting images/videos, getting information about files, etc.
-* Mangohud - launching games with an overlay via the Explorer context menu (may not work with some games).
-
 ## WARNING!
 
 This is an "Alpha" version of the Linux distribution, it contains many unfinished parts! Use at your own risk!
@@ -32,6 +16,22 @@ GitHub (7-Zip, 2 parts): [Chimbalix 24.3 Alphachi](https://github.com/Shedou/Chi
 Google Drive (ISO, 3.7 GiB): https://drive.google.com/file/d/1SuFSK3OwIFpEF9NYQmipEway6Q5Rk_au/view
 
 MD5 (Chimbalix-24.3-Alphachi.iso): 8fe988eae664dd4ec3b96817ccddd714
+
+# Chimbalix 24.3 Alphachi
+* 64-Bit (x86_64)
+* Kernel: 6.9.10-1-liquorix-amd64
+* Debian version: 12.x (bookworm)
+* DE: Xfce 4.18.1
+
+### Features:
+* x32 libraries out of the box - allow you to run and use 32-bit software in a 64-bit OS.
+* One-click screenshots - use ctrl / shift / ctrl+shift combinations with PrintScreen to quickly create screenshots.
+* "PortSoft" - the main directory for applications, allowing you to place even completely portable software in it.
+* By default, the nested structure of the "Start" menu.
+* "Apps" - a stable section of the "Start" menu for third-party applications, allows developers to have their own menu sections for applications.
+* WINE (Proton LG) - allows you to run Windows applications, although it is better to use real Windows for this...
+* Useful tools - useful tools are built into the Explorer context menu, such as converting images/videos, getting information about files, etc.
+* Mangohud - launching games with an overlay via the Explorer context menu (may not work with some games).
 
 ## Interesting applications
 Interesting and possibly useful applications that are not included in the distribution "out of the box".
