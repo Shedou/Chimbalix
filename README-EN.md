@@ -3,11 +3,11 @@
 
 ## WARNING!
 
-This is an "Alpha" version of the Linux distribution, it contains many unfinished parts! Use at your own risk!
+This is an "Alpha" version of a Linux distribution, it contains unfinished parts! Use at your own risk!
 
 Chimbalix (github.com/Shedou/Chimbalix) is based on the MX Linux 23.1 x64 AHS "Libretto" distribution (mxlinux.org).
 
-WARNING! Thoughtless installation of updates via *sudo apt upgrade / sudo apt-get upgrade* or package managers is not recommended! This may disrupt the order in the system and lead to problems typical for many Linux distributions, such as breaking the video card driver! Please be careful when working with repositories!
+WARNING! Mindlessly installing updates via *sudo apt upgrade / sudo apt-get upgrade* or package managers is not recommended! It may break the system and cause problems! Please be careful when working with repositories!
 
 ## Downloads
 
