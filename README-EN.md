@@ -17,6 +17,9 @@ Google Drive (ISO, 3.7 GiB): https://drive.google.com/file/d/1SuFSK3OwIFpEF9NYQm
 
 MD5 (Chimbalix-24.3-Alphachi.iso): 8fe988eae664dd4ec3b96817ccddd714
 
+# Chimbalix 24.4 Alphachi
+* In development.
+
 # Chimbalix 24.3 Alphachi
 * 64-Bit (x86_64)
 * Kernel: 6.9.10-1-liquorix-amd64
