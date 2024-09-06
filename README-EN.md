@@ -26,6 +26,9 @@ MD5 (Chimbalix-24.3-Alphachi.iso): 8fe988eae664dd4ec3b96817ccddd714
 * Debian version: 12.x (bookworm)
 * DE: Xfce 4.18.1
 
+### Known issues
+* Wine Proton: After installing Windows applications via Wine Proton, shortcuts are not created in the Start menu. The problem can only be solved by replacing Wine Proton with the original Wine Staging.
+
 ### Features:
 * x32 libraries out of the box - allow you to run and use 32-bit software in a 64-bit OS.
 * One-click screenshots - use ctrl / shift / ctrl+shift combinations with PrintScreen to quickly create screenshots.
