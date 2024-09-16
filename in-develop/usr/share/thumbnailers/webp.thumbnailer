@@ -1,7 +1,0 @@
-[Thumbnailer Entry]
-Version=1.0
-Encoding=UTF-8
-Type=X-Thumbnailer
-Name=webp Thumbnailer
-MimeType=image/webp;
-Exec=convert -thumbnail %s %i %o
