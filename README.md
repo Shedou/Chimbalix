@@ -11,18 +11,15 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 
 ## Загрузки
 
-GitHub (7-Zip, 2 parts): [Chimbalix 24.3 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_243) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_243/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_243)
+MD5 (Chimbalix-24.4-Alphachi.iso): 75515c0e01ea888252767f72779c9d21
 
-Google Drive (ISO, 3.7 GiB): https://drive.google.com/file/d/1SuFSK3OwIFpEF9NYQmipEway6Q5Rk_au/view
+GitHub (7-Zip, 2 parts): [Chimbalix 24.4 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_244) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_244/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_244)
 
-MD5 (Chimbalix-24.3-Alphachi.iso): 8fe988eae664dd4ec3b96817ccddd714
+Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 # Chimbalix 24.4 Alphachi
-* В разработке.
-
-# Chimbalix 24.3 Alphachi
 * 64-Bit (x86_64)
-* Ядро: 6.9.10-1-liquorix-amd64
+* Ядро: 6.9.12-2-liquorix-amd64
 * Версия Debian: 12.x (bookworm)
 * DE: Xfce 4.18.1
 
