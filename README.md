@@ -25,6 +25,7 @@ Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/fold
 
 ### Известные проблемы
 * Wine Proton: После установки Windows приложений через Wine Proton не создаются ярлыки в меню "Пуск", Решается проблема только заменой Wine Proton на оригинальный Wine Staging.
+* Wine Prefix: Проблема при запуске HoYoPlay из-за проблемного шрифта WineTahomaBold "tahomabd.ttf", [выпущено исправление](https://github.com/Shedou/Chimbalix/blob/main/Hot-fixes/Chimbalix-24.4/Chimbalix-24.4-Wine-Fonts-Fix.sh).
 
 ### Особенности:
 * x32 библиотеки из коробки - позволяют запускать и использовать 32 битный софт в 64 битной ОС.
