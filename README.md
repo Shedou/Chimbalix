@@ -17,6 +17,9 @@ GitHub (7-Zip, 2 parts): [Chimbalix 24.4 Alphachi](https://github.com/Shedou/Chi
 
 Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
+# Chimbalix 24.5 Alphachi
+* В разработке...
+
 # Chimbalix 24.4 Alphachi
 * 64-Bit (x86_64)
 * Ядро: 6.9.12-2-liquorix-amd64
