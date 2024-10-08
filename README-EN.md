@@ -31,11 +31,10 @@ Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/fold
 * Wine Prefix: Problem starting HoYoPlay due to problematic WineTahomaBold font "tahomabd.ttf", [fix released](https://github.com/Shedou/Chimbalix/blob/main/Hot-fixes/Chimbalix-24.4/Chimbalix-24.4-Wine-Fonts-Fix.sh).
 
 ### Features:
+* Autonomy - the system does not require Internet access for installation, and thanks to the "PortSoft" catalog and the stable "Applications" category in the menu, it is possible to [create and distribute autonomous installation packages of third-party applications](https://github.com/Shedou/Chimbalix-Software-Catalog), also suitable for installation without network access.
 * x32 libraries out of the box - allow you to run and use 32-bit software in a 64-bit OS.
 * One-click screenshots - use ctrl / shift / ctrl+shift combinations with PrintScreen to quickly create screenshots.
-* "PortSoft" - the main directory for applications, allowing you to place even completely portable software in it.
 * By default, the nested structure of the "Start" menu.
-* "Apps" - a stable section of the "Start" menu for third-party applications, allows developers to have their own menu sections for applications.
 * WINE (Proton LG) - allows you to run Windows applications, although it is better to use real Windows for this...
 * Useful tools - useful tools are built into the Explorer context menu, such as converting images/videos, getting information about files, etc.
 * Mangohud - launching games with an overlay via the Explorer context menu (may not work with some games).
