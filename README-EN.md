@@ -26,11 +26,23 @@ Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/fold
 * Debian version: 12.x (bookworm)
 * DE: Xfce 4.18.1
 
-### Known issues
+## Minimum system requirements
+* CPU: 2 cores, x86_64.
+* GPU: VGA compatible.
+* RAM: 2 GB.
+* HDD/SSD: 20 GB.
+
+## Recommended system requirements
+* CPU: AMD Ryzen / Intel Core, 6 cores or more.
+* GPU: NVIDIA GTX 900 Series and newer, including GTX 745/750/750Ti (Maxwell), it is also possible to install official drivers for GeForce GTX 600-700 Series (Kepler), but the functionality may be limited.
+* RAM: 16 GB or more.
+* SSD: 60 GB or more.
+
+## Known issues
 * Wine Proton: After installing Windows applications via Wine Proton, shortcuts are not created in the Start menu. The problem can only be solved by replacing Wine Proton with the original Wine Staging.
 * Wine Prefix: Problem starting HoYoPlay due to problematic WineTahomaBold font "tahomabd.ttf", [fix released](https://github.com/Shedou/Chimbalix/blob/main/Hot-fixes/Chimbalix-24.4/Chimbalix-24.4-Wine-Fonts-Fix.sh).
 
-### Features:
+## Features:
 * Autonomy - the system does not require Internet access for installation, and thanks to the "PortSoft" catalog and the stable "Applications" category in the menu, it is possible to [create and distribute autonomous installation packages of third-party applications](https://github.com/Shedou/Chimbalix-Software-Catalog), also suitable for installation without network access.
 * x32 libraries out of the box - allow you to run and use 32-bit software in a 64-bit OS.
 * One-click screenshots - use ctrl / shift / ctrl+shift combinations with PrintScreen to quickly create screenshots.
