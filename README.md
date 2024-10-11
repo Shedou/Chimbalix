@@ -17,20 +17,32 @@ GitHub (7-Zip, 2 parts): [Chimbalix 24.4 Alphachi](https://github.com/Shedou/Chi
 
 Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
-# Chimbalix 24.5 Alphachi
+## Chimbalix 24.5 Alphachi
 * В разработке...
 
-# Chimbalix 24.4 Alphachi
+## Chimbalix 24.4 Alphachi
 * 64-Bit (x86_64)
 * Ядро: 6.9.12-2-liquorix-amd64
 * Версия Debian: 12.x (bookworm)
 * DE: Xfce 4.18.1
 
-### Известные проблемы
+## Минимальные системные требования
+* CPU: 2 ядра, x86_64.
+* GPU: VGA совместимая.
+* RAM: 2 GB.
+* HDD/SSD: 20 GB.
+
+## Рекомендуемые системные требования
+* CPU: AMD Ryzen / Intel Core, 6 ядер и больше.
+* GPU: NVIDIA GTX 900 Series и новее, в том числе GTX 745/750/750Ti (Maxwell), так же возможна установка официальных драйверов для GeForce GTX 600-700 Series (Kepler), но функционал может быть ограниченным.
+* RAM: 16 GB и больше.
+* SSD: 60 GB и больше.
+
+## Известные проблемы
 * Wine Proton: После установки Windows приложений через Wine Proton не создаются ярлыки в меню "Пуск", Решается проблема только заменой Wine Proton на оригинальный Wine Staging.
 * Wine Prefix: Проблема при запуске HoYoPlay из-за проблемного шрифта WineTahomaBold "tahomabd.ttf", [выпущено исправление](https://github.com/Shedou/Chimbalix/blob/main/Hot-fixes/Chimbalix-24.4/Chimbalix-24.4-Wine-Fonts-Fix.sh).
 
-### Особенности:
+## Особенности:
 * Автономность - система не требует наличия доступа к интернету для установки, а благодаря каталогу "PortSoft" и стабильной категории "Applications" в меню, возможно создание и распространение [автономных установочных пакетов сторонних приложений](https://github.com/Shedou/Chimbalix-Software-Catalog), так же пригодных для установки без доступа к сети.
 * x32 библиотеки из коробки - позволяют запускать и использовать 32 битный софт в 64 битной ОС.
 * Скриншоты в одно нажатие - используйте сочетания ctrl / shift / ctrl+shift вместе с PrintScreen для быстрого создания скриншотов.
