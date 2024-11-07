@@ -11,16 +11,13 @@ WARNING! Mindlessly installing updates via *sudo apt upgrade / sudo apt-get upgr
 
 ## Downloads
 
-MD5 (Chimbalix-24.4-Alphachi.iso): 75515c0e01ea888252767f72779c9d21
+MD5 (Chimbalix-24.5-alphachi.iso): f97578c78b1b5c6f59625fdf878d5234
 
-GitHub (7-Zip, 2 parts): [Chimbalix 24.4 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_244) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_244/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_244)
+GitHub (7-Zip, 2 parts): [Chimbalix 24.5 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_245/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245)
 
-Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
+Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 # Chimbalix 24.5 Alphachi
-* In development...
-
-# Chimbalix 24.4 Alphachi
 * 64-Bit (x86_64)
 * Kernel: 6.9.12-2-liquorix-amd64
 * Debian version: 12.x (bookworm)
@@ -54,7 +51,7 @@ Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/fold
 ## Interesting applications
 Interesting and possibly useful applications that are not included in the distribution "out of the box".
 
-* Chimbalix application catalog (in the initial stage): [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
+* Chimbalix application catalog: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
 
 * Image generation using neural networks: [Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
 
