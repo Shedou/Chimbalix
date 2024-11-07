@@ -11,16 +11,13 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 
 ## Загрузки
 
-MD5 (Chimbalix-24.4-Alphachi.iso): 75515c0e01ea888252767f72779c9d21
+MD5 (Chimbalix-24.5-alphachi.iso): f97578c78b1b5c6f59625fdf878d5234
 
-GitHub (7-Zip, 2 parts): [Chimbalix 24.4 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_244) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_244/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_244)
+GitHub (7-Zip, 2 parts): [Chimbalix 24.5 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_245/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245)
 
-Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
+Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 ## Chimbalix 24.5 Alphachi
-* В разработке...
-
-## Chimbalix 24.4 Alphachi
 * 64-Bit (x86_64)
 * Ядро: 6.9.12-2-liquorix-amd64
 * Версия Debian: 12.x (bookworm)
@@ -40,7 +37,6 @@ Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/fold
 
 ## Известные проблемы
 * Wine Proton: После установки Windows приложений через Wine Proton не создаются ярлыки в меню "Пуск", Решается проблема только заменой Wine Proton на оригинальный Wine Staging.
-* Wine Prefix: Проблема при запуске HoYoPlay из-за проблемного шрифта WineTahomaBold "tahomabd.ttf", [выпущено исправление](https://github.com/Shedou/Chimbalix/blob/main/Hot-fixes/Chimbalix-24.4/Chimbalix-24.4-Wine-Fonts-Fix.sh).
 
 ## Особенности:
 * Автономность - система не требует наличия доступа к интернету для установки, а благодаря каталогу "PortSoft" и стабильной категории "Applications" в меню, возможно создание и распространение [автономных установочных пакетов сторонних приложений](https://github.com/Shedou/Chimbalix-Software-Catalog), так же пригодных для установки без доступа к сети.
@@ -54,7 +50,7 @@ Google Drive (Chimbalix 24.4 Alphachi, ISO): https://drive.google.com/drive/fold
 ## Интересные приложения
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
 
-* Каталог приложений для Chimbalix (в начальной стадии): [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
+* Каталог приложений для Chimbalix: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
 
 * Генерация изображений с помощью нейронных сетей: [Сборка Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
 
