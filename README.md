@@ -21,7 +21,10 @@ Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/fold
 * 64-Bit (x86_64)
 * Ядро: 6.9.12-2-liquorix-amd64
 * Версия Debian: 12.x (bookworm)
-* DE: Xfce 4.18.1
+* GLIBC: 2.36, GCC 12.2, make 4.3, CMake 3.25.1, QMake 3.1
+* DE: Xfce 4.18.1, GTK 3.24, LightDM 1.26
+* Mesa: 24.2.2
+* Display: X11 v1.21.1.7
 
 ## Минимальные системные требования
 * CPU: 2 ядра, x86_64.
