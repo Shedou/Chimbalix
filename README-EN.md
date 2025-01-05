@@ -70,7 +70,6 @@ The list will be expanded as needed.
 <details>
 <summary>-= List =-</summary>
 
-* Scripts for Chimbalix: [chimbalix-scripts](https://github.com/Shedou/chimbalix-scripts)
 * Distribution installer: [chimbalix-installer](https://github.com/Shedou/chimbalix-installer)
 * Distribution ISO image creator: [chimbalix-snapshot](https://github.com/Shedou/chimbalix-snapshot)
 * Baobab disk space analyzer: [chimbalix-baobab](https://github.com/Shedou/chimbalix-baobab)
