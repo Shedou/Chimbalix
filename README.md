@@ -69,7 +69,6 @@ Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/fold
 <details>
   <summary>-= Список =-</summary>
 
-* Скрипты для Chimbalix: [chimbalix-scripts](https://github.com/Shedou/chimbalix-scripts)
 * Программа установки дистрибутива: [chimbalix-installer](https://github.com/Shedou/chimbalix-installer)
 * Программа создания ISO образа дистрибутива: [chimbalix-snapshot](https://github.com/Shedou/chimbalix-snapshot)
 * Анализатор использованного места на дисках Baobab: [chimbalix-baobab](https://github.com/Shedou/chimbalix-baobab)
