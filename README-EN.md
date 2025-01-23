@@ -11,18 +11,16 @@ WARNING! Mindlessly installing updates via *sudo apt upgrade / sudo apt-get upgr
 
 ## Downloads
 
-MD5 (Chimbalix-24.5-alphachi.iso): f97578c78b1b5c6f59625fdf878d5234
+MD5 - Chimbalix-24.6-alphachi-core61.iso: fafbd3eb925e7702ca90c0086b286429
 
-GitHub (7-Zip, 2 parts): [Chimbalix 24.5 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_245/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245)
+MD5 - Chimbalix-24.6-alphachi-core68.iso: de698457c8506b58440ba727079addf5
 
-Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
+Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 ## Chimbalix 24.6 Alphachi
-* In development...
-
-# Chimbalix 24.5 Alphachi
 * 64-Bit (x86_64)
-* Kernel: 6.9.12-2-liquorix-amd64
+* Kernel - core61: 6.1.0-25-amd64 (6.1.106-3)
+* Kernel - core68: 6.8.12-1-liquorix-amd64 (6.8-18.1)
 * Debian version: 12.x (bookworm)
 * GLIBC: 2.36, GCC 12.2, make 4.3, CMake 3.25.1, QMake 3.1
 * DE: Xfce 4.18.1, GTK 3.24, LightDM 1.26
@@ -35,15 +33,11 @@ Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/fold
 * RAM: 2 GB.
 * HDD/SSD: 20 GB.
 
-## Recommended system requirements
+## Recommended system requirements (core68)
 * CPU: AMD Ryzen / Intel Core, 6 cores or more.
 * GPU: NVIDIA GTX 900 Series and newer, including GTX 745/750/750Ti (Maxwell), it is also possible to install official drivers for GeForce GTX 600-700 Series (Kepler), but the functionality may be limited.
 * RAM: 16 GB or more.
 * SSD: 60 GB or more.
-
-## Known issues
-* Wine Proton: After installing Windows applications via Wine Proton, shortcuts are not created in the Start menu. The problem can only be solved by replacing Wine Proton with the original Wine Staging.
-* Wine Prefix: Problem starting HoYoPlay due to problematic WineTahomaBold font "tahomabd.ttf", [fix released](https://github.com/Shedou/Chimbalix/blob/main/Hot-fixes/Chimbalix-24.4/Chimbalix-24.4-Wine-Fonts-Fix.sh).
 
 ## Features:
 * Autonomy - the system does not require Internet access for installation, and thanks to the "PortSoft" catalog and the stable "Applications" category in the menu, it is possible to [create and distribute autonomous installation packages of third-party applications](https://github.com/Shedou/Chimbalix-Software-Catalog), also suitable for installation without network access.
