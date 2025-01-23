@@ -1,3 +1,5 @@
+# Chimbalix [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/total.svg)](https://github.com/Shedou/Chimbalix/releases)
+
 ## Language / Язык
 [Original (Russian)](https://github.com/Shedou/Chimbalix) - **Transtlated (English)**
 
