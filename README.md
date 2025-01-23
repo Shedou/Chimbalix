@@ -11,18 +11,16 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 
 ## Загрузки
 
-MD5 (Chimbalix-24.5-alphachi.iso): f97578c78b1b5c6f59625fdf878d5234
+MD5 - Chimbalix-24.6-alphachi-core61.iso: fafbd3eb925e7702ca90c0086b286429
 
-GitHub (7-Zip, 2 parts): [Chimbalix 24.5 Alphachi](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245) - [![Github Releases](https://img.shields.io/github/downloads/Shedou/Chimbalix/Chimbalix_245/total.svg)](https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_245)
+MD5 - Chimbalix-24.6-alphachi-core68.iso: de698457c8506b58440ba727079addf5
 
-Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
+Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 ## Chimbalix 24.6 Alphachi
-* В разработке...
-
-## Chimbalix 24.5 Alphachi
 * 64-Bit (x86_64)
-* Ядро: 6.9.12-2-liquorix-amd64
+* Ядро - core61: 6.1.0-25-amd64 (6.1.106-3)
+* Ядро - core68: 6.8.12-1-liquorix-amd64 (6.8-18.1)
 * Версия Debian: 12.x (bookworm)
 * GLIBC: 2.36, GCC 12.2, make 4.3, CMake 3.25.1, QMake 3.1
 * DE: Xfce 4.18.1, GTK 3.24, LightDM 1.26
@@ -35,14 +33,11 @@ Google Drive (Chimbalix 24.5 Alphachi, ISO): https://drive.google.com/drive/fold
 * RAM: 2 GB.
 * HDD/SSD: 20 GB.
 
-## Рекомендуемые системные требования
+## Рекомендуемые системные требования (core68)
 * CPU: AMD Ryzen / Intel Core, 6 ядер и больше.
 * GPU: NVIDIA GTX 900 Series и новее, в том числе GTX 745/750/750Ti (Maxwell), так же возможна установка официальных драйверов для GeForce GTX 600-700 Series (Kepler), но функционал может быть ограниченным.
 * RAM: 16 GB и больше.
 * SSD: 60 GB и больше.
-
-## Известные проблемы
-* Wine Proton: После установки Windows приложений через Wine Proton не создаются ярлыки в меню "Пуск", Решается проблема только заменой Wine Proton на оригинальный Wine Staging.
 
 ## Особенности:
 * Автономность - система не требует наличия доступа к интернету для установки, а благодаря каталогу "PortSoft" и стабильной категории "Applications" в меню, возможно создание и распространение [автономных установочных пакетов сторонних приложений](https://github.com/Shedou/Chimbalix-Software-Catalog), так же пригодных для установки без доступа к сети.
