@@ -22,6 +22,9 @@ WARNING! Mindlessly installing updates via *sudo apt upgrade / sudo apt-get upgr
 
 Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
+## Chimbalix 24.7 Alphachi
+* In development...
+
 ## Chimbalix 24.6 Alphachi
 * 64-Bit (x86_64)
 * Kernel - core61: 6.1.0-25-amd64 (6.1.106-3)
