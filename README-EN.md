@@ -9,23 +9,20 @@ This is an "Alpha" version of a Linux distribution, it contains unfinished parts
 
 Chimbalix (github.com/Shedou/Chimbalix) is based on the MX Linux 23.1 x64 AHS "Libretto" distribution (mxlinux.org).
 
-WARNING! Mindlessly installing updates via *sudo apt upgrade / sudo apt-get upgrade* or package managers is not recommended! It may break the system and cause problems! Please be careful when working with repositories!
-
 ## Downloads
 
-### Compatible with Secure Boot:
-`MD5 - Chimbalix-24.6-alphachi-core61.iso: fafbd3eb925e7702ca90c0086b286429`
+#### Not compatible with Secure Boot, but has better performance:
+`MD5 - Chimbalix-24.7-alphachi-core68.iso: 3a00aa26ea391012647f598c486c9da6`
 
-### Not compatible with Secure Boot:
-`MD5 - Chimbalix-24.6-alphachi-core68.iso: de698457c8506b58440ba727079addf5`\
-`MD5 - Chimbalix-24.6-alphachi-multicore.iso: 22c24498dca921435101866253092136`
+### Compatible with Secure Boot:
+`MD5 - Chimbalix-24.7-alphachi-core61.iso: 073c24ae26426521fa58503f437355d9`
+
+### Compatible with Secure Boot only when booting with kernel 6.1:
+`MD5 - Chimbalix-24.7-alphachi-multicore.iso: 97206a0ea599943e60aac855fd34526a`
 
 Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 ## Chimbalix 24.7 Alphachi
-* In development...
-
-## Chimbalix 24.6 Alphachi
 * 64-Bit (x86_64)
 * Kernel - core61: 6.1.0-25-amd64 (6.1.106-3)
 * Kernel - core68: 6.8.12-1-liquorix-amd64 (6.8-18.1)
