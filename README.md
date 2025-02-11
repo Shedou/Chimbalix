@@ -9,23 +9,20 @@
 
 Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибутиве MX Linux 23.1 x64 AHS "Libretto" ( mxlinux.org ).
 
-ПРЕДУПРЕЖДЕНИЕ! Бездумная установка обновлений через *sudo apt upgrade / sudo apt-get upgrade* или менеджеры пакетов не рекомендуется! Это может нарушить порядок в системе и привести к проблемам! Пожалуйста, будьте осторожны при работе с репозиториями!
-
 ## Загрузки
 
+### Несовместимо с Secure Boott, но имеет лучшую производительность:
+`MD5 - Chimbalix-24.7-alphachi-core68.iso: de698457c8506b58440ba727079addf5`
+
 ### Совместимо с Secure Boot:
-`MD5 - Chimbalix-24.6-alphachi-core61.iso: fafbd3eb925e7702ca90c0086b286429`
+`MD5 - Chimbalix-24.7-alphachi-core61.iso: fafbd3eb925e7702ca90c0086b286429`
 
-### Несовместимо с Secure Boot:
-`MD5 - Chimbalix-24.6-alphachi-core68.iso: de698457c8506b58440ba727079addf5`\
-`MD5 - Chimbalix-24.6-alphachi-multicore.iso: 22c24498dca921435101866253092136`
+### Совместимо с Secure Boot только при загрузке с ядром 6.1:
+`MD5 - Chimbalix-24.7-alphachi-multicore.iso: 22c24498dca921435101866253092136`
 
-Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
+Google Drive (Chimbalix 24.7 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 ## Chimbalix 24.7 Alphachi
-* В разработке...
-
-## Chimbalix 24.6 Alphachi
 * 64-Bit (x86_64)
 * Ядро - core61: 6.1.0-25-amd64 (6.1.106-3)
 * Ядро - core68: 6.8.12-1-liquorix-amd64 (6.8-18.1)
