@@ -11,14 +11,14 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 
 ## Загрузки
 
-### Несовместимо с Secure Boott, но имеет лучшую производительность:
-`MD5 - Chimbalix-24.7-alphachi-core68.iso: de698457c8506b58440ba727079addf5`
+### Несовместимо с Secure Boot, но имеет лучшую производительность:
+`MD5 - Chimbalix-24.7-alphachi-core68.iso: 3a00aa26ea391012647f598c486c9da6`
 
 ### Совместимо с Secure Boot:
-`MD5 - Chimbalix-24.7-alphachi-core61.iso: fafbd3eb925e7702ca90c0086b286429`
+`MD5 - Chimbalix-24.7-alphachi-core61.iso: 073c24ae26426521fa58503f437355d9`
 
 ### Совместимо с Secure Boot только при загрузке с ядром 6.1:
-`MD5 - Chimbalix-24.7-alphachi-multicore.iso: 22c24498dca921435101866253092136`
+`MD5 - Chimbalix-24.7-alphachi-multicore.iso: 97206a0ea599943e60aac855fd34526a`
 
 Google Drive (Chimbalix 24.7 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
