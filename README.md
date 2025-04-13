@@ -12,7 +12,7 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 ## Загрузки
 
 ### Несовместимо с Secure Boot, но имеет лучшую производительность:
-(не рекомендуется для VirtualBox из-за проблем с драйвером VMSVGA в составе ядер Linux 6.5+)
+(не рекомендуется для VirtualBox из-за проблем с драйвером VMSVGA в составе ядер Linux 6.6+)
 `MD5 - Chimbalix-24.7-alphachi-core68.iso: 3a00aa26ea391012647f598c486c9da6`
 
 ### Совместимо с Secure Boot:
