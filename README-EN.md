@@ -12,7 +12,7 @@ Chimbalix (github.com/Shedou/Chimbalix) is based on the MX Linux 23.1 x64 AHS "L
 ## Downloads
 
 #### Not compatible with Secure Boot, but has better performance:
-(not recommended for VirtualBox due to issues with the VMSVGA driver in Linux 6.6+ kernels)
+(not recommended for VirtualBox due to issues with the VMSVGA driver in Linux 6.6+ kernels)\
 `MD5 - Chimbalix-24.7-alphachi-core68.iso: 3a00aa26ea391012647f598c486c9da6`
 
 ### Compatible with Secure Boot:
