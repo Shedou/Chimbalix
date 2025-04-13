@@ -12,6 +12,7 @@ Chimbalix (github.com/Shedou/Chimbalix) is based on the MX Linux 23.1 x64 AHS "L
 ## Downloads
 
 #### Not compatible with Secure Boot, but has better performance:
+(not recommended for VirtualBox due to issues with the VMSVGA driver in Linux 6.5+ kernels)
 `MD5 - Chimbalix-24.7-alphachi-core68.iso: 3a00aa26ea391012647f598c486c9da6`
 
 ### Compatible with Secure Boot:
@@ -33,12 +34,14 @@ Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/fold
 * Display: X11 v1.21.1.7
 
 ## Minimum system requirements
+* Display: 1024x768.
 * CPU: 2 cores, x86_64.
 * GPU: VGA compatible.
 * RAM: 2 GB.
 * HDD/SSD: 20 GB.
 
 ## Recommended system requirements (core68)
+* Display: 1920x1080.
 * CPU: AMD Ryzen / Intel Core, 6 cores or more.
 * GPU: NVIDIA GTX 900 Series and newer, including GTX 745/750/750Ti (Maxwell), it is also possible to install official drivers for GeForce GTX 600-700 Series (Kepler), but the functionality may be limited.
 * RAM: 16 GB or more.
