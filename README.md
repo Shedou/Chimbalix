@@ -33,12 +33,14 @@ Google Drive (Chimbalix 24.7 Alphachi, ISO): https://drive.google.com/drive/fold
 * Display: X11 v1.21.1.7
 
 ## Минимальные системные требования
+* Display: 1024x768.
 * CPU: 2 ядра, x86_64.
 * GPU: VGA совместимая.
 * RAM: 2 GB.
 * HDD/SSD: 20 GB.
 
 ## Рекомендуемые системные требования (core68)
+* Display: 1920x1080.
 * CPU: AMD Ryzen / Intel Core, 6 ядер и больше.
 * GPU: NVIDIA GTX 900 Series и новее, в том числе GTX 745/750/750Ti (Maxwell), так же возможна установка официальных драйверов для GeForce GTX 600-700 Series (Kepler), но функционал может быть ограниченным.
 * RAM: 16 GB и больше.
