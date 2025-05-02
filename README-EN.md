@@ -23,6 +23,9 @@ Chimbalix (github.com/Shedou/Chimbalix) is based on the MX Linux 23.1 x64 AHS "L
 
 Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
+## Chimbalix 24.8 Alphachi
+* In dev...
+
 ## Chimbalix 24.7 Alphachi
 * 64-Bit (x86_64)
 * Kernel - core61: 6.1.0-25-amd64 (6.1.106-3)
