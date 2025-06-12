@@ -25,6 +25,8 @@ Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/fold
 
 ## Chimbalix 24.8 Alphachi
 * In dev...
+* GLIBC 2.36, GCC 12.2, make 4.3, CMake 3.31.7, QMake 3.1
+* DE: Xfce 4.20
 
 ## Chimbalix 24.7 Alphachi
 * 64-Bit (x86_64)
