@@ -11,32 +11,25 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 
 ## Загрузки
 
+### Совместимо с Secure Boot при загрузке с ядром 6.1:
+`MD5 - Chimbalix-24.8-alphachi-multicore.iso: dfdaae632a8877e80b715c657e38aba7`
+
 ### Несовместимо с Secure Boot, но имеет лучшую производительность:
 (не рекомендуется для VirtualBox из-за проблем с драйвером VMSVGA в составе ядер Linux 6.6+)\
-`MD5 - Chimbalix-24.7-alphachi-core68.iso: 3a00aa26ea391012647f598c486c9da6`
+`MD5 - Chimbalix-24.8-alphachi-core68.iso: 708af9195f50894001e9209e0992581d`
 
-### Совместимо с Secure Boot:
-`MD5 - Chimbalix-24.7-alphachi-core61.iso: 073c24ae26426521fa58503f437355d9`
+GitHub: https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_248
 
-### Совместимо с Secure Boot только при загрузке с ядром 6.1:
-`MD5 - Chimbalix-24.7-alphachi-multicore.iso: 97206a0ea599943e60aac855fd34526a`
-
-Google Drive (Chimbalix 24.7 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
+Google Drive (Chimbalix 24.8 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
 ## Chimbalix 24.8 Alphachi
-* В разработке...
-* GLIBC 2.36, GCC 12.2, make 4.3, CMake 3.31.7, QMake 3.1
-* DE: Xfce 4.20, GTK 3.24, LightDM 1.32
-* Mesa: 24.2.8
-
-## Chimbalix 24.7 Alphachi
 * 64-Bit (x86_64)
 * Ядро - core61: 6.1.0-25-amd64 (6.1.106-3)
 * Ядро - core68: 6.8.12-1-liquorix-amd64 (6.8-18.1)
 * Версия Debian: 12.x (bookworm)
-* GLIBC: 2.36, GCC 12.2, make 4.3, CMake 3.25.1, QMake 3.1
-* DE: Xfce 4.18.1, GTK 3.24, LightDM 1.26
-* Mesa: 24.2.2
+* GLIBC 2.36, GCC 12.2, make 4.3, CMake 3.31.7, QMake 3.1
+* DE: Xfce 4.20, GTK 3.24, LightDM 1.32
+* Mesa: 24.2.8
 * Display: X11 v1.21.1.7
 
 ## Минимальные системные требования
@@ -58,7 +51,7 @@ Google Drive (Chimbalix 24.7 Alphachi, ISO): https://drive.google.com/drive/fold
 * x32 библиотеки из коробки - позволяют запускать и использовать 32 битный софт в 64 битной ОС.
 * Скриншоты в одно нажатие - используйте сочетания ctrl / shift / ctrl+shift вместе с PrintScreen для быстрого создания скриншотов.
 * По умолчанию вложенная структура меню "Пуск".
-* WINE (Proton LG) - позволяет запускать Windows приложения, хотя для этого лучше всё же использовать настоящую Windows...
+* WINE (LG) - позволяет запускать Windows приложения, хотя для этого лучше всё же использовать настоящую Windows...
 * Полезные инструменты - в контекстное меню проводника встроены полезные инструменты, например конвертация изображений/видео, получение информации о файлах и т.п.
 * Mangohud - запуск игр с оверлеем через контекстное меню проводника (может не работать с некоторыми играми).
 
