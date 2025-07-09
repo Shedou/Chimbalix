@@ -24,8 +24,8 @@ Google Drive (Chimbalix 24.8 Alphachi, ISO): https://drive.google.com/drive/fold
 
 ## Chimbalix 24.8 Alphachi
 * 64-Bit (x86_64)
-* Ядро - core61: 6.1.0-25-amd64 (6.1.106-3)
-* Ядро - core68: 6.8.12-1-liquorix-amd64 (6.8-18.1)
+* core 6.1: 6.1.0-25-amd64 (6.1.106-3)
+* core 6.8: 6.8.12-1-liquorix-amd64 (6.8-18.1)
 * Версия Debian: 12.x (bookworm)
 * GLIBC 2.36, GCC 12.2, make 4.3, CMake 3.31.7, QMake 3.1
 * DE: Xfce 4.20, GTK 3.24, LightDM 1.32
