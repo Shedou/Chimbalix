@@ -12,11 +12,11 @@ Chimbalix ( github.com/Shedou/Chimbalix ) основан на дистрибут
 ## Загрузки
 
 ### Совместимо с Secure Boot при загрузке с ядром 6.1:
-`MD5 - Chimbalix-24.8-alphachi-multicore.iso: dfdaae632a8877e80b715c657e38aba7`
+`MD5 - Chimbalix-24.8-1-alphachi-multicore.iso: d294ff12fe6d279090e964a4339ec5ac`
 
 ### Несовместимо с Secure Boot, но имеет лучшую производительность:
 (не рекомендуется для VirtualBox из-за проблем с драйвером VMSVGA в составе ядер Linux 6.6+)\
-`MD5 - Chimbalix-24.8-alphachi-core68.iso: 708af9195f50894001e9209e0992581d`
+`MD5 - Chimbalix-24.8-1-alphachi-core68.iso: 2d0cae610a396bb31f8da20b51f2b74d`
 
 GitHub: https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_248
 
