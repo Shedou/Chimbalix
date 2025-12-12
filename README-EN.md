@@ -22,8 +22,8 @@ GitHub: https://github.com/Shedou/Chimbalix/releases/tag/Chimbalix_248
 
 Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/folders/1aLBYuxGtlz0r0mBtaSXoB_CvAoli076X
 
-## Update Packs (Chimbalix 24.8 - 24.8-1)
-In development: CUP-2481
+## Chimbalix Update Packs
+- [CUP-2481](https://github.com/Shedou/Chimbalix/releases/tag/CUP-2481) - Chimbalix 24.4 - 24.8
 
 ## Chimbalix 24.8 Alphachi
 * 64-Bit (x86_64)
