@@ -3,6 +3,19 @@
 ## Language / Язык
 **Original (Russian)** - [Transtlated (English)](https://github.com/Shedou/Chimbalix/blob/main/README-EN.md)
 
+## Важное уведомление для жителей California и Colorado (USA)
+
+As a consequence of recent legislative activity in [California][cal]
+and [Colororado][col]:
+
+* California residents may no longer use Chimbalix after Jan 1st, 2027.
+* Colorado residents may no longer use Chimbalix after Jan 1st, 2028.
+
+Chimbalix не использует проверку возраста, поскольку это требует привлечения человеческих ресурсов, усложняет систему и серьезно нарушает конфиденциальность пользователей. Кроме того, внедрение проверки возраста может быть опасно для детей, которые могут указывать свой реальный возраст, поскольку эта информация может быть использована в злонамеренных целях сторонними приложениями.
+
+[cal]: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043
+[col]: https://leg.colorado.gov/bill_files/111670/download
+
 ## ВНИМАНИЕ!
 
 Это "Alpha" версия дистрибутива Linux, она содержит незавершённые детали! Используйте на свой страх и риск!
