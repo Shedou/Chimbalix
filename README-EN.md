@@ -11,7 +11,7 @@ and [Colororado][col]:
 * California residents may no longer use Chimbalix after Jan 1st, 2027.
 * Colorado residents may no longer use Chimbalix after Jan 1st, 2028.
 
-Chimbalix does not implement age verification because it requires human resources, complicates the system, and seriously violates user privacy. Furthermore, implementing age verification could be dangerous for children who may indicate their real age, as this information could be used for malicious purposes by third-party applications.
+Chimbalix does not use age verification because it requires human resources to implement, complicates the system, and seriously violates user privacy. Furthermore, implementing age verification could be dangerous for children who may indicate their real age, as this information could be used for malicious purposes by third-party applications.
 
 [cal]: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043
 [col]: https://leg.colorado.gov/bill_files/111670/download
