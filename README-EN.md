@@ -21,6 +21,10 @@ Chimbalix does not use age verification because it requires human resources to i
 This is an "Alpha" version of a Linux distribution, it contains unfinished parts! Use at your own risk!\
 Chimbalix (github.com/Shedou/Chimbalix) is based on the MX Linux 23.1 x64 AHS "Libretto" distribution (mxlinux.org).
 
+## Chimbalix 24.9 Alphachi
+* 64-Bit (x86_64)
+* [In development...](https://github.com/Shedou/Chimbalix/discussions/16)
+
 ## Downloads
 
 ### Compatible with Secure Boot when booting with kernel 6.1:
