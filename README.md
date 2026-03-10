@@ -79,8 +79,8 @@ Google Drive (Chimbalix 24.8 Alphachi, ISO): https://drive.google.com/drive/fold
 Интересные и возможно полезные приложения, которые не включены в дистрибутив "из коробки".
 
 * Каталог приложений для Chimbalix: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
-
-* Генерация изображений с помощью нейронных сетей: [Сборка Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
+* Нейронная сеть для генерации изображений: [Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
+* Нейронная сеть для генерации видео: [FramePack Neuro](https://github.com/Shedou/Neuro/tree/main/FramePack-Neuro)
 
 ## Репозиторий разработки:
 
