@@ -78,8 +78,8 @@ Google Drive (Chimbalix 24.6 Alphachi, ISO): https://drive.google.com/drive/fold
 Interesting and possibly useful applications that are not included in the distribution "out of the box".
 
 * Chimbalix application catalog: [Chimbalix-Software-Catalog](https://github.com/Shedou/Chimbalix-Software-Catalog)
-
-* Image generation using neural networks: [Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
+* Neural network for image generation: [Stable Diffusion Web UI Neuro Linux](https://github.com/Shedou/Neuro/tree/main/SD_WEBUI_Neuro_Linux)
+* Neural network for video generation: [FramePack Neuro](https://github.com/Shedou/Neuro/tree/main/FramePack-Neuro)
 
 ## Development repository:
 
