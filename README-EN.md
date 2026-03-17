@@ -3,18 +3,18 @@
 ## Language / Язык
 [Original (Russian)](https://github.com/Shedou/Chimbalix) - **Transtlated (English)**
 
-## Important notice to residents of California and Colorado
+## Important notice!
 
-As a consequence of recent legislative activity in [California][cal]
-and [Colororado][col]:
+Chimbalix does not have age verification features! Implementing such features complicates the system and violates user privacy. Age verification can be extremely dangerous for children, as information can be used for malicious purposes by third-party applications. Because some countries and regions require age verification features under the guise of child protection, it has been decided to prohibit the use of Chimbalix in these countries and regions. If your laws require such features from operating systems, you are prohibited from using Chimbalix.
 
-* California residents may no longer use Chimbalix after Jan 1st, 2027.
-* Colorado residents may no longer use Chimbalix after Jan 1st, 2028.
+<details>
+  <summary>Examples</summary>
+  
+California: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043
 
-Chimbalix does not use age verification because it requires human resources to implement, complicates the system, and seriously violates user privacy. Furthermore, implementing age verification could be dangerous for children who may indicate their real age, as this information could be used for malicious purposes by third-party applications.
+Colororado: https://leg.colorado.gov/bill_files/111670/download
 
-[cal]: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043
-[col]: https://leg.colorado.gov/bill_files/111670/download
+</details>
 
 ## WARNING!
 
